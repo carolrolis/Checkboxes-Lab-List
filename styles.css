@@ -1,0 +1,85 @@
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  list-style: none;
+  text-decoration: none;
+  overflow-x: hidden;
+}
+
+.michroma-regular {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  max-width:70%;
+  margin:3rem auto 4rem;
+  text-align: center;
+  font-family: Michroma;
+  font-size:1.5rem;
+  word-spacing: 1rem;
+  letter-spacing: 4px;
+}
+
+table {
+  margin:auto;
+  width: 45%;
+  font-family: sans-serif;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+th {
+  height:1.5rem;
+}
+
+td {
+  height:1.8rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+input {
+  cursor: pointer;
+}
+
+#final-buttons {
+  max-width:20%;
+  display:flex;
+  flex-direction: column;
+  margin: 3rem auto 2rem;
+}
+
+button {
+  font-family:Michroma;
+  height:1.8rem;
+  margin-top:0.8rem;
+  border-radius: 5px;
+  border-color: white;
+  background-color: rgb(255, 238, 241);
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: black;
+}
+
+button:active {
+  background-color:white;
+}
+
+#result {
+  font-family: Michroma;
+  text-align:center;
+  margin-bottom:3rem;
+}
+
+@media (max-width: 800px) {
+  #final-buttons {
+    max-width:60%
+  }
+}
