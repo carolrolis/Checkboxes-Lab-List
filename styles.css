@@ -26,21 +26,22 @@ h1 {
 
 input[type='text'] {
   height:2rem;
-  width:48%;
+  margin-bottom:2rem;
   border-radius: 5px;
   border-color: white;
   display: block;
-  margin:0 auto 2rem;
   text-align: center;
   font-family: Michroma;
   font-size:1rem;
 }
 
 #search-bars {
-  width:45%;
-  margin: auto;
+  max-width:50%;
+  margin:auto;
   display:flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 table {
