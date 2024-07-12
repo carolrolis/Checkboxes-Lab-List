@@ -100,8 +100,15 @@ button:active {
   margin-bottom:3rem;
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 900px) {
   #final-buttons {
-    max-width:60%
+    max-width:50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #search-bars {
+    max-width:100%;
+    margin:0;
   }
 }
