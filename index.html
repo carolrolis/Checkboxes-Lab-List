@@ -1,554 +1,3879 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');</style>
-  <link rel="stylesheet" href="styles.css" />
-  <title>Calculadora da Duda</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculadora da Duda</title>
 </head>
+
 <body>
-  <h1>Calculadora da Duda</h1>
+    <h1>Calculadora da Duda</h1>
 
-  <table border="1"> 
-    <tr> 
-        <th>Check</th> 
-        <th>Código</th> 
-        <th>Nome</th> 
-        <th>Preço</th> 
-    </tr>
-    <tr>
-      <td><input type="checkbox" name="check" title="check" value="1"></td>
-      <td id="code1">17HPC</td> 
-      <td id="name1">17 HIDROXIPROGESTERONA</td> 
-      <td id="price1">30,00</td>
-    </tr> 
-    <tr>
-      <td><input type="checkbox" name="check" title="check" value="2"></td>
-      <td id="code2">17OHC</td> 
-      <td id="name2">17 HIDROXICORTICOIDES</td> 
-      <td id="price2">55,00</td>
-    </tr> 
-    <tr>
-      <td><input type="checkbox" name="check" title="check" value="3"></td>
-      <td id="code3">17OHP</td> 
-      <td id="name3">17 ALFA-HIDROXIPROGESTERONA</td> 
-      <td id="price3">30,00</td>
-    </tr>
-    <tr>
-      <td><input type="checkbox" name="check" title="check" value="4"></td>
-      <td id="code4">5HIAC</td> 
-      <td id="name4">ACIDO 5 HIDROXI INDOL ACETICO</td> 
-      <td id="price4">90,00</td>
-    </tr>
-    <tr>
-      <td><input type="checkbox" name="check" title="check" value="5"></td>
-      <td id="code5">5NUC</td> 
-      <td id="name5">5 NUCLEOTIDASE</td> 
-      <td id="price5">130,00</td>
-    </tr>
-    <tr>
-      <td><input type="checkbox" name="check" title="check" value="6"></td>
-      <td id="code6">A1A</td> 
-      <td id="name6">ALFA 1 ANTI-TRIPSINA</td> 
-      <td id="price6">30,00</td>
-    </tr>
-    <tr>
-      <td><input type="checkbox" name="check" title="check" value="7"></td>
-      <td id="code7">A1AF</td> 
-      <td id="name7">ALFA 1 ANTI-TRIPSINA FECAL</td> 
-      <td id="price7">80,00</td>
-    </tr>
-    <tr>
-      <td><input type="checkbox" name="check" title="check" value="8"></td>
-      <td id="code8">AACH1</td> 
-      <td id="name8">TESTE RAPIDO CHIKUNGUNYA IGG/IGM</td> 
-      <td id="price8">125,00</td>
-    </tr>
-    <tr>
-      <td><input type="checkbox" name="check" title="check" value="9"></td>
-      <td id="code9">AACHI</td> 
-      <td id="name9">ANTICORPOS ANTI CHIKUNGUNYA IGG/IGM</td> 
-      <td id="price9">240,00</td>
-    </tr>
-    <tr>
-      <td><input type="checkbox" name="check" title="check" value="10"></td>
-      <td id="code10">AAFIN</td> 
-      <td id="name10">ANTICORPOS ANTI - FATOR INTRINSECO</td> 
-      <td id="price10">80,00</td>
-    </tr>
-    <tr>
-      <td><input type="checkbox" name="check" title="check" value="11"></td>
-      <td id="code11">AAINS</td> 
-      <td id="name11">ANTICORPOS ANTI - INSULINA</td> 
-      <td id="price11">50,00</td>
-    </tr>
-    <tr>
-      <td><input type="checkbox" name="check" title="check" value="12"></td>
-      <td id="code12">AAU</td> 
-      <td id="name12">HEPATITE B HBSAG ANTIGENO AUSTRALIA</td> 
-      <td id="price12">30,00</td>
-    </tr>
-    <tr>
-      <td><input type="checkbox" name="check" title="check" value="13"></td>
-      <td id="code13">AAU1</td> 
-      <td id="name13">TESTE RAPIDO HEPATITE B HBSAG</td> 
-      <td id="price13">25,00</td>
-    </tr>
-    <tr>
-      <td><input type="checkbox" name="check" title="check" value="14"></td>
-      <td id="code14">AB2GL</td> 
-      <td id="name14">ANTI - BETA2 GLICOPROTEINA IGG E IG</td> 
-      <td id="price14">110,00</td>
-    </tr>
-    <tr>
-      <td><input type="checkbox" name="check" title="check" value="15"></td>
-      <td id="code15">ABO</td> 
-      <td id="name15">ABO SANGUINEO</td> 
-      <td id="price15">15,00</td>
-    </tr>
-    <tr>
-      <td><input type="checkbox" name="check" title="check" value="16"></td>
-      <td id="code16">ACCP</td> 
-      <td id="name16">ANTI-CITRULINA ANTI CCP</td> 
-      <td id="price16">110,00</td>
-    </tr>
-    <tr>
-      <td><input type="checkbox" name="check" title="check" value="17"></td>
-      <td id="code17">ACEA</td> 
-      <td id="name17">ANTIGENO CARCINOEMBRIONARIO - CEA</td> 
-      <td id="price17">30,00</td>
-    </tr>
-    <tr>
-      <td><input type="checkbox" name="check" title="check" value="18"></td>
-      <td id="code18">ACEPA</td>
-      <td id="name18">CELULAS PARIETAIS</td>
-      <td id="price18">45,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="19"></td>
-        <td id="code19">ACERI</td>
-        <td id="name19">ACETILCOLINESTERASE</td>
-        <td id="price19">25,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="20"></td>
-        <td id="code20">ACETI</td>
-        <td id="name20">ANTI-RECEPTOR ACETILCOLINA</td>
-        <td id="price20">220,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="21"></td>
-        <td id="code21">ACETR</td>
-        <td id="name21">ANTICORPOS ANTI-CENTROMERO</td>
-        <td id="price21">30,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="22"></td>
-        <td id="code22">ACLAT</td>
-        <td id="name22">DOSAGEM DE ACIDO LATICO - LACTATO</td>
-        <td id="price22">20,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="23"></td>
-        <td id="code23">ACTH</td>
-        <td id="name23">ADRENOCORTICOTROFICO HORMONIO</td>
-        <td id="price23">40,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="24"></td>
-        <td id="code24">ACUR</td>
-        <td id="name24">ACIDO URICO URINARIO (ISOLADA)</td>
-        <td id="price24">10,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="25"></td>
-        <td id="code25">ACURI</td>
-        <td id="name25">DOSAGEM DE ACIDO URICO</td>
-        <td id="price25">15,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="26"></td>
-        <td id="code26">ACURU</td>
-        <td id="name26">ACIDO ÚRICO URINÁRIO 24 HORAS</td>
-        <td id="price26">15,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="27"></td>
-        <td id="code27">ACVAL</td>
-        <td id="name27">DOSAGEM DE ACIDO VALPROICO</td>
-        <td id="price27">25,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="28"></td>
-        <td id="code28">ACVAM</td>
-        <td id="name28">ÁCIDO VANIL MANDÉLICO</td>
-        <td id="price28">35,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="29"></td>
-        <td id="code29">ACVMI</td>
-        <td id="name29">ACIDO VANIL MANDELICO AMOSTRA ISOLA</td>
-        <td id="price29">130,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="30"></td>
-        <td id="code30">ADA</td>
-        <td id="name30">ADENOSINA DEAMINASE</td>
-        <td id="price30">40,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="31"></td>
-        <td id="code31">ADNA</td>
-        <td id="name31">DNA NATIVO AUTO ANTICORPOS</td>
-        <td id="price31">25,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="32"></td>
-        <td id="code32">ADNA</td>
-        <td id="name32">DNA NATIVO AUTO ANTICORPOS</td>
-        <td id="price32">25,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="33"></td>
-        <td id="code33">ADNAB</td>
-        <td id="name33">ANTICORPOS ANTI ESTREPTOCOCCUS [DNAASE B]</td>
-        <td id="price33">45,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="34"></td>
-        <td id="code34">AENDA</td>
-        <td id="name34">ANTICORPOS ANTI ENDOMISIO IGA</td>
-        <td id="price34">35,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="35"></td>
-        <td id="code35">AENDG</td>
-        <td id="name35">ANTICORPOS ANTI ENDOMISIO IGG</td>
-        <td id="price35">35,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="36"></td>
-        <td id="code36">AENDM</td>
-        <td id="name36">ANTICORPOS ANTI ENDOMISIO IGM</td>
-        <td id="price36">35,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="37"></td>
-        <td id="code37">AESP</td>
-        <td id="name37">ANTICORPOS ANTI - ESPERMATOZÓIDE</td>
-        <td id="price37">35,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="38"></td>
-        <td id="code38">AFOLI</td>
-        <td id="name38">ACIDO FOLICO</td>
-        <td id="price38">20,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="39"></td>
-        <td id="code39">AFOSF</td>
-        <td id="name39">ANTICORPOS ANTI-FOSFATIDILSERINA</td>
-        <td id="price39">740,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="40"></td>
-        <td id="code40">AFP</td>
-        <td id="name40">ALFA FETOPROTEINA</td>
-        <td id="price40">35,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="41"></td>
-        <td id="code41">AGLA</td>
-        <td id="name41">GLIADINA IgA ANTICORPOS ANTI</td>
-        <td id="price41">40,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="42"></td>
-        <td id="code42">AGLDA</td>
-        <td id="name42">GLIADINA DEAMINADA (DGP) ANTICORPOS</td>
-        <td id="price42">140,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="43"></td>
-        <td id="code43">AGLG</td>
-        <td id="name43">GLIADINA IgG ANTICORPOS ANTI</td>
-        <td id="price43">40,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="44"></td>
-        <td id="code44">AGLM</td>
-        <td id="name44">GLIADINA IgM ANTICORPOS IGM</td>
-        <td id="price44">80,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="45"></td>
-        <td id="code45">AH</td>
-        <td id="name45">ACIDO HIPURICO FINAL DE JORNADA DE</td>
-        <td id="price45">20,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="46"></td>
-        <td id="code46">AHBE</td>
-        <td id="name46">HEPATITE B - ANTI HBE</td>
-        <td id="price46">35,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="47"></td>
-        <td id="code47">AHCV</td>
-        <td id="name47">HEPATITE C ANTI HCV</td>
-        <td id="price47">25,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="48"></td>
-        <td id="code48">AHI</td>
-        <td id="name48">ACIDO HIPURICO INICIO DE JORNADA DE</td>
-        <td id="price48">20,00</td>
-    </tr>
-    <tr>
-      <td><input type="checkbox" name="check" title="check" value="49"></td>
-      <td id="code49">AHP</td>
-      <td id="name49">PESQUISA DE ANTIGENO HELICOBACTER P</td>
-      <td id="price49">100,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="50"></td>
-        <td id="code50">AILHO</td>
-        <td id="name50">ANTICORPOS ANTI-ILHOTAS DE LANGERHA</td>
-        <td id="price50">80,00</td>
-    </tr>
-    <tr>
-      <td><input type="checkbox" name="check" title="check" value="49"></td>
-      <td id="code49">AHP</td>
-      <td id="name49">PESQUISA DE ANTIGENO HELICOBACTER</td>
-      <td id="price49">100,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="50"></td>
-        <td id="code50">AILHO</td>
-        <td id="name50">ANTICORPOS ANTI-ILHOTAS DE LANGERHA</td>
-        <td id="price50">80,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="51"></td>
-        <td id="code51">AJO1</td>
-        <td id="name51">ANTI-JO1</td>
-        <td id="price51">60,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="52"></td>
-        <td id="code52">ALB</td>
-        <td id="name52">DOSAGEM DE ALBUMINA</td>
-        <td id="price52">15,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="53"></td>
-        <td id="code53">ALDOL</td>
-        <td id="name53">ALDOLASE</td>
-        <td id="price53">20,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="54"></td>
-        <td id="code54">ALDOS</td>
-        <td id="name54">ALDOSTERONA</td>
-        <td id="price54">35,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="55"></td>
-        <td id="code55">ALKM</td>
-        <td id="name55">LKM-1, ANTI</td>
-        <td id="price55">35,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="56"></td>
-        <td id="code56">ALU</td>
-        <td id="name56">ALUMINIO (SERICO)</td>
-        <td id="price56">40,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="57"></td>
-        <td id="code57">ALUPI</td>
-        <td id="name57">ANTICOAGULANTE LUPICO</td>
-        <td id="price57">35,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="58"></td>
-        <td id="code58">AMH</td>
-        <td id="name58">ACIDO METILHIPURICO FINAL DE JORNADA</td>
-        <td id="price58">20,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="59"></td>
-        <td id="code59">AMHI</td>
-        <td id="name59">ACIDO METILHIPURICO INICIO DE JORNADA</td>
-        <td id="price59">20,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="60"></td>
-        <td id="code60">AMILT</td>
-        <td id="name60">DOSAGEM DE AMILASE</td>
-        <td id="price60">15,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="61"></td>
-        <td id="code61">AMILU</td>
-        <td id="name61">DOSAGEM DE AMILASE URINARIA</td>
-        <td id="price61">15,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="62"></td>
-        <td id="code62">AMITO</td>
-        <td id="name62">ANTICORPO ANTI-MITOCONDRIA</td>
-        <td id="price62">35,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="63"></td>
-        <td id="code63">AMON2</td>
-        <td id="name63">AMÔNIA - URINA 24 HORAS</td>
-        <td id="price63">100,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="64"></td>
-        <td id="code64">AMUSL</td>
-        <td id="name64">ANTI-MUSCULO LISO</td>
-        <td id="price64">35,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="65"></td>
-        <td id="code65">ANCA</td>
-        <td id="name65">ANTICORPOS ANTI-CITOPLASMA DE NEUTRÓFILOS</td>
-        <td id="price65">90,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="66"></td>
-        <td id="code66">ANDRO</td>
-        <td id="name66">ANDROSTENEDIONA</td>
-        <td id="price66">25,00</td>
-    </tr>
-    <tr>
-      <td><input type="checkbox" name="check" title="check" value="67"></td>
-      <td id="code67">ANTIB</td>
-      <td id="name67">ANTIBIOGRAMA URINOCULTURA</td>
-      <td id="price67">25,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="68"></td>
-        <td id="code68">ANUCL</td>
-        <td id="name68">ANTICORPO ANTI-NUCLEOSSOMA</td>
-        <td id="price68">80,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="69"></td>
-        <td id="code69">APOAI</td>
-        <td id="name69">APOLIPOPROTEINA A - APO A1</td>
-        <td id="price69">20,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="70"></td>
-        <td id="code70">APOB</td>
-        <td id="name70">APOLIPOPROTEINA B - APO B</td>
-        <td id="price70">30,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="71"></td>
-        <td id="code71">AQUA4</td>
-        <td id="name71">AQUAPORINA 4 ANTICORPOS IgG</td>
-        <td id="price71">290,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="72"></td>
-        <td id="code72">ARNP</td>
-        <td id="name72">ANTI-RNP</td>
-        <td id="price72">35,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="73"></td>
-        <td id="code73">ASC70</td>
-        <td id="name73">ANTI-SCL-70</td>
-        <td id="price73">30,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="74"></td>
-        <td id="code74">ASCE</td>
-        <td id="name74">ANTI-SACCHAROMYCES CEREVISIAE - IGA E IGG</td>
-        <td id="price74">540,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="75"></td>
-        <td id="code75">ASM</td>
-        <td id="name75">ANTI-SM</td>
-    </tr>
-    <tr>
-      <td><input type="checkbox" name="check" title="check" value="76"></td>
-      <td id="code76">ASO</td>
-      <td id="name76">ANTIESTREPTOLISINA O (ASO)</td>
-      <td id="price76">10,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="77"></td>
-        <td id="code77">ASSA</td>
-        <td id="name77">SSA/RO, AUTO ANTICORPOS ANTI</td>
-        <td id="price77">35,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="78"></td>
-        <td id="code78">ASSB</td>
-        <td id="name78">ANTI-LA/SS-B</td>
-        <td id="price78">35,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="79"></td>
-        <td id="code79">ATFOS</td>
-        <td id="name79">ANTICORPOS ANTI-IA2 (DIABETES MEL)</td>
-        <td id="price79">70,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="80"></td>
-        <td id="code80">ATIRO</td>
-        <td id="name80">TIREOGLOBULINA ANTICORPOS ANTI</td>
-        <td id="price80">30,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="81"></td>
-        <td id="code81">ATPO</td>
-        <td id="name81">ANTI-PEROXIDASE (ANTI TPO)</td>
-        <td id="price81">30,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="82"></td>
-        <td id="code82">ATRA</td>
-        <td id="name82">ACIDO TRANSMUCÔNICO (Urina)</td>
-        <td id="price82">90,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="83"></td>
-        <td id="code83">ATRAA</td>
-        <td id="name83">ANTI-TRANSGLUTAMINASE IGA</td>
-        <td id="price83">60,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="84"></td>
-        <td id="code84">ATRAG</td>
-        <td id="name84">ANTI-TRANSGLUTAMINASE IGG</td>
-        <td id="price84">60,00</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="check" title="check" value="85"></td>
-        <td id="code85">ATRO3</td>
-        <td id="name85">ANTITROMBINA-III DOSAGEM</td>
-        <td id="price85">80,00</td>
-    </tr>
-    
+    <table border="1">
+        <tr>
+            <th>Check</th>
+            <th>Código</th>
+            <th>Nome</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="1"></td>
+            <td id="code1">17HPC</td>
+            <td id="name1">17 HIDROXIPROGESTERONA</td>
+            <td id="price1">30,00</td>
+        </tr>
 
-  </table>
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="2"></td>
+            <td id="code2">17OHC</td>
+            <td id="name2">17 HIDROXICORTICOIDES</td>
+            <td id="price2">55,00</td>
+        </tr>
 
-  <div id="final-buttons">
-    <button type="button" id="calc-button">Calcular</button>
-    <button type="button" id="clear-button">Limpar</button>
-  </div>
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="3"></td>
+            <td id="code3">17OHP</td>
+            <td id="name3">17 ALFA-HIDROXIPROGESTERONA</td>
+            <td id="price3">30,00</td>
+        </tr>
 
-  <div id="result"></div>
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="4"></td>
+            <td id="code4">5HIAC</td>
+            <td id="name4">ACIDO 5 HIDROXI INDOL ACETICO</td>
+            <td id="price4">90,00</td>
+        </tr>
 
-<script src="scripts.js"></script>
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="5"></td>
+            <td id="code5">5NUC</td>
+            <td id="name5">5 NUCLEOTIDASE</td>
+            <td id="price5">130,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="6"></td>
+            <td id="code6">A1A</td>
+            <td id="name6">ALFA 1 ANTI-TRIPSINA</td>
+            <td id="price6">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="7"></td>
+            <td id="code7">A1AF</td>
+            <td id="name7">ALFA 1 ANTI-TRIPSINA FECAL</td>
+            <td id="price7">80,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="8"></td>
+            <td id="code8">AACH1</td>
+            <td id="name8">TESTE RAPIDO CHIKUNGUNYA IGG/IGM</td>
+            <td id="price8">125,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="9"></td>
+            <td id="code9">AACHI</td>
+            <td id="name9">ANTICORPOS ANTI CHIKUNGUNYA IGG/IGM</td>
+            <td id="price9">240,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="10"></td>
+            <td id="code10">AAFIN</td>
+            <td id="name10">ANTICORPOS ANTI - FATOR INTRINSECO</td>
+            <td id="price10">80,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="11"></td>
+            <td id="code11">AAINS</td>
+            <td id="name11">ANTICORPOS ANTI - INSULINA</td>
+            <td id="price11">50,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="12"></td>
+            <td id="code12">AAU</td>
+            <td id="name12">HEPATITE B HBSAG ANTIGENO AUSTARLIA</td>
+            <td id="price12">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="13"></td>
+            <td id="code13">AAU1</td>
+            <td id="name13">TESTE RAPIDO HEPATITE B HBSAG</td>
+            <td id="price13">25,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="14"></td>
+            <td id="code14">AB2GL</td>
+            <td id="name14">ANTI - BETA2 GLICOPROTEINA IGG E IG</td>
+            <td id="price14">110,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="15"></td>
+            <td id="code15">ABO</td>
+            <td id="name15">ABO SANGUINEO</td>
+            <td id="price15">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="16"></td>
+            <td id="code16">ACCP</td>
+            <td id="name16">ANTI-CITRULINA ANTI CCP</td>
+            <td id="price16">110,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="17"></td>
+            <td id="code17">ACEA</td>
+            <td id="name17">ANTIGENO CARCINOEMBRIONARIO - CEA</td>
+            <td id="price17">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="18"></td>
+            <td id="code18">ACEPA</td>
+            <td id="name18">CELULAS PARIETAIS</td>
+            <td id="price18">45,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="19"></td>
+            <td id="code19">ACERI</td>
+            <td id="name19">ACETILCOLINESTERASE</td>
+            <td id="price19">25,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="20"></td>
+            <td id="code20">ACETI</td>
+            <td id="name20">ANTI-RECEPTOR ACETILCOLINA</td>
+            <td id="price20">220,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="21"></td>
+            <td id="code21">ACETR</td>
+            <td id="name21">ANTICORPOS ANTI-CENTROMERO</td>
+            <td id="price21">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="22"></td>
+            <td id="code22">ACLAT</td>
+            <td id="name22">DOSAGEM DE ACIDO LATICO - LACTATO</td>
+            <td id="price22">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="23"></td>
+            <td id="code23">ACTH</td>
+            <td id="name23">ADRENOCORTICOTROFICO HORMONIO</td>
+            <td id="price23">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="24"></td>
+            <td id="code24">ACUR</td>
+            <td id="name24">ACIDO URICO URINARIO (ISOLADA)</td>
+            <td id="price24">10,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="25"></td>
+            <td id="code25">ACURI</td>
+            <td id="name25">DOSAGEM DE ACIDO URICO</td>
+            <td id="price25">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="26"></td>
+            <td id="code26">ACURU</td>
+            <td id="name26">ACIDO ÚRICO URINÁRIO 24 HORAS</td>
+            <td id="price26">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="27"></td>
+            <td id="code27">ACVAL</td>
+            <td id="name27">DOSAGEM DE ACIDO VALPROICO</td>
+            <td id="price27">25,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="28"></td>
+            <td id="code28">ACVAM</td>
+            <td id="name28">ÁCIDO VANIL MANDÉLICO</td>
+            <td id="price28">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="29"></td>
+            <td id="code29">ACVMI</td>
+            <td id="name29">ACIDO VANIL MANDELICO AMOSTRA ISOLA</td>
+            <td id="price29">130,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="30"></td>
+            <td id="code30">ADA</td>
+            <td id="name30">ADENOSINA DEAMINASE</td>
+            <td id="price30">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="31"></td>
+            <td id="code31">ADNA</td>
+            <td id="name31">DNA NATIVO AUTO ANTICORPOS</td>
+            <td id="price31">25,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="32"></td>
+            <td id="code32">ADNAB</td>
+            <td id="name32">ANTICORPOS ANTI ESTREPTOCOCCUS [DNAASE B]</td>
+            <td id="price32">45,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="33"></td>
+            <td id="code33">AENDA</td>
+            <td id="name33">ANTICORPOS ANTI ENDOMISIO IGA</td>
+            <td id="price33">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="34"></td>
+            <td id="code34">AENDG</td>
+            <td id="name34">ANTICORPOS ANTI ENDOMISIO IGG</td>
+            <td id="price34">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="35"></td>
+            <td id="code35">AENDM</td>
+            <td id="name35">ANTICORPOS ANTI ENDOMISIO IGM</td>
+            <td id="price35">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="36"></td>
+            <td id="code36">AESP</td>
+            <td id="name36">ANTICORPOS ANTI - ESPERMATOZÓIDE</td>
+            <td id="price36">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="37"></td>
+            <td id="code37">AFOLI</td>
+            <td id="name37">ACIDO FOLICO</td>
+            <td id="price37">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="38"></td>
+            <td id="code38">AFOSF</td>
+            <td id="name38">ANTICORPOS ANTI-FOSFATIDILSERINA</td>
+            <td id="price38">740,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="39"></td>
+            <td id="code39">AFP</td>
+            <td id="name39">ALFA FETOPROTEINA</td>
+            <td id="price39">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="40"></td>
+            <td id="code40">AGLA</td>
+            <td id="name40">GLIADINA IgA ANTICORPOS ANTI</td>
+            <td id="price40">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="41"></td>
+            <td id="code41">AGLDA</td>
+            <td id="name41">GLIADINA DEAMINADA (DGP) ANTICORPOS</td>
+            <td id="price41">140,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="42"></td>
+            <td id="code42">AGLG</td>
+            <td id="name42">GLIADINA IgG ANTICORPOS ANTI</td>
+            <td id="price42">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="43"></td>
+            <td id="code43">AGLM</td>
+            <td id="name43">GLIADINA IgM ANTICORPOS IGM</td>
+            <td id="price43">80,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="44"></td>
+            <td id="code44">AH</td>
+            <td id="name44">ACIDO HIPURICO FINAL DE JORNADA DE</td>
+            <td id="price44">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="45"></td>
+            <td id="code45">AHBE</td>
+            <td id="name45">HEPATITE B - ANTI HBE</td>
+            <td id="price45">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="46"></td>
+            <td id="code46">AHCV</td>
+            <td id="name46">HEPATITE C ANTI HCV</td>
+            <td id="price46">25,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="47"></td>
+            <td id="code47">AHI</td>
+            <td id="name47">ACIDO HIPURICO INICIO DE JORNADA DE</td>
+            <td id="price47">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="48"></td>
+            <td id="code48">AHP</td>
+            <td id="name48">PESQUISA DE ANTIGENO HELICOBACTER P</td>
+            <td id="price48">100,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="49"></td>
+            <td id="code49">AILHO</td>
+            <td id="name49">ANTICORPOS ANTI-ILHOTAS DE LANGERHA</td>
+            <td id="price49">80,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="50"></td>
+            <td id="code50">AJO1</td>
+            <td id="name50">ANTI-JO1</td>
+            <td id="price50">60,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="51"></td>
+            <td id="code51">ALB</td>
+            <td id="name51">DOSAGEM DE ALBUMINA</td>
+            <td id="price51">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="52"></td>
+            <td id="code52">ALDOL</td>
+            <td id="name52">ALDOLASE</td>
+            <td id="price52">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="53"></td>
+            <td id="code53">ALDOS</td>
+            <td id="name53">ALDOSTERONA</td>
+            <td id="price53">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="54"></td>
+            <td id="code54">ALKM</td>
+            <td id="name54">LKM-1, ANTI</td>
+            <td id="price54">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="55"></td>
+            <td id="code55">ALU</td>
+            <td id="name55">ALUMINIO (SERICO)</td>
+            <td id="price55">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="56"></td>
+            <td id="code56">ALUPI</td>
+            <td id="name56">ANTICOAGULANTE LUPICO</td>
+            <td id="price56">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="57"></td>
+            <td id="code57">AMH</td>
+            <td id="name57">ACIDO METILHIPURICO FINAL DE JORNADA</td>
+            <td id="price57">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="58"></td>
+            <td id="code58">AMHI</td>
+            <td id="name58">ACIDO METILHIPURICO INICIO DE JORNADA</td>
+            <td id="price58">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="59"></td>
+            <td id="code59">AMILT</td>
+            <td id="name59">DOSAGEM DE AMILASE</td>
+            <td id="price59">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="60"></td>
+            <td id="code60">AMILU</td>
+            <td id="name60">DOSAGEM DE AMILASE URINARIA</td>
+            <td id="price60">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="61"></td>
+            <td id="code61">AMITO</td>
+            <td id="name61">ANTICORPO ANTI-MITOCONDRIA</td>
+            <td id="price61">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="62"></td>
+            <td id="code62">AMON2</td>
+            <td id="name62">AMÔNIA - URINA 24 HORAS</td>
+            <td id="price62">100,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="63"></td>
+            <td id="code63">AMUSL</td>
+            <td id="name63">ANTI-MUSCULO LISO</td>
+            <td id="price63">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="64"></td>
+            <td id="code64">ANCA</td>
+            <td id="name64">ANTICORPOS ANTI-CITOPLASMA DE NEUTRÓFILOS C E P</td>
+            <td id="price64">90,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="65"></td>
+            <td id="code65">ANDRO</td>
+            <td id="name65">ANDROSTENEDIONA</td>
+            <td id="price65">25,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="66"></td>
+            <td id="code66">ANTIB</td>
+            <td id="name66">ANTIBIOGRAMA URINOCULTURA</td>
+            <td id="price66">25,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="67"></td>
+            <td id="code67">ANUCL</td>
+            <td id="name67">ANTICORPO ANTI-NUCLEOSSOMA</td>
+            <td id="price67">80,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="68"></td>
+            <td id="code68">APOAI</td>
+            <td id="name68">APOLIPOPROTEINA A - APO A1</td>
+            <td id="price68">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="69"></td>
+            <td id="code69">APOB</td>
+            <td id="name69">APOLIPOPROTEINA B - APO B</td>
+            <td id="price69">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="70"></td>
+            <td id="code70">AQUA4</td>
+            <td id="name70">AQUAPORINA 4 ANTICORPOS IgG</td>
+            <td id="price70">290,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="71"></td>
+            <td id="code71">ARNP</td>
+            <td id="name71">ANTI-RNP</td>
+            <td id="price71">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="72"></td>
+            <td id="code72">ASC70</td>
+            <td id="name72">ANTI - SCL - 70</td>
+            <td id="price72">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="73"></td>
+            <td id="code73">ASCE</td>
+            <td id="name73">ANTI - SACCHAROMYCES CEREVISIAE - IGA E IGG</td>
+            <td id="price73">540,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="74"></td>
+            <td id="code74">ASM</td>
+            <td id="name74">ANTI-SM</td>
+            <td id="price74">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="75"></td>
+            <td id="code75">ASO</td>
+            <td id="name75">ANTIESTREPTOLISINA O (ASO)</td>
+            <td id="price75">10,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="76"></td>
+            <td id="code76">ASSA</td>
+            <td id="name76">SSA/RO, AUTO ANTICORPOS ANTI</td>
+            <td id="price76">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="77"></td>
+            <td id="code77">ASSB</td>
+            <td id="name77">ANTI-LA/SS-B</td>
+            <td id="price77">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="78"></td>
+            <td id="code78">ATFOS</td>
+            <td id="name78">ANTICORPOS ANTI - IA2 (DIABETES MEL</td>
+            <td id="price78">70,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="79"></td>
+            <td id="code79">ATIRO</td>
+            <td id="name79">TIREOGLOBULINA ANTICORPOS ANTI</td>
+            <td id="price79">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="80"></td>
+            <td id="code80">ATPO</td>
+            <td id="name80">ANTI-PEROXIDASE (ANTI TPO)</td>
+            <td id="price80">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="81"></td>
+            <td id="code81">ATRA</td>
+            <td id="name81">ACIDO TRANSMUCÔNICO (Urina)</td>
+            <td id="price81">90,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="82"></td>
+            <td id="code82">ATRAA</td>
+            <td id="name82">ANTI-TRANSGLUTAMINASE IGA</td>
+            <td id="price82">60,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="83"></td>
+            <td id="code83">ATRAG</td>
+            <td id="name83">ANTI-TRANSGLUTAMINASE IGG</td>
+            <td id="price83">60,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="84"></td>
+            <td id="code84">ATRO3</td>
+            <td id="name84">ANTITROMBINA-III DOSAGEM</td>
+            <td id="price84">80,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="85"></td>
+            <td id="code85">B2GLA</td>
+            <td id="name85">ANTICORPOS IGA ANTI BETA2 GLICOPROTEÍNA</td>
+            <td id="price85">90,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="86"></td>
+            <td id="code86">B2MIC</td>
+            <td id="name86">BETA 2 MICROGLOBULINA</td>
+            <td id="price86">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="87"></td>
+            <td id="code87">B2MIU</td>
+            <td id="name87">BETA 2-MICROGLOBULINA URINA</td>
+            <td id="price87">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="88"></td>
+            <td id="code88">BAAR2</td>
+            <td id="name88">BAAR - PESQUISA 2º AMOSTRA</td>
+            <td id="price88">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="89"></td>
+            <td id="code89">BAAR3</td>
+            <td id="name89">BAAR - PESQUISA 3º AMOSTRA</td>
+            <td id="price89">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="90"></td>
+            <td id="code90">BAARP</td>
+            <td id="name90">BAAR - PESQUISA 1ª AMOSTRA</td>
+            <td id="price90">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="91"></td>
+            <td id="code91">BACT</td>
+            <td id="name91">BACTERIOSCÓPICO (GRAM)</td>
+            <td id="price91">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="92"></td>
+            <td id="code92">BCRAB</td>
+            <td id="name92">BCR/ABL - QUALITATIVO P190 P210</td>
+            <td id="price92">780,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="93"></td>
+            <td id="code93">BHCG</td>
+            <td id="name93">BETA HCG QUALITATIVO</td>
+            <td id="price93">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="94"></td>
+            <td id="code94">BICAR</td>
+            <td id="name94">BICARBONATO</td>
+            <td id="price94">50,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="95"></td>
+            <td id="code95">BIL</td>
+            <td id="name95">DOSAGEM DE BILIRRUBINA TOTAL E FRAÇÕES</td>
+            <td id="price95">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="96"></td>
+            <td id="code96">BIOT</td>
+            <td id="name96">ATIVIDADE DA BIOTINIDASE - NEONATAL</td>
+            <td id="price96">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="97"></td>
+            <td id="code97">BNP</td>
+            <td id="name97">BNP PEPTIDEO NATIURETICO</td>
+            <td id="price97">400,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="98"></td>
+            <td id="code98">BRUCG</td>
+            <td id="name98">BRUCELOSE - ANTICORPOS IGG</td>
+            <td id="price98">130,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="99"></td>
+            <td id="code99">BRUCM</td>
+            <td id="name99">BRUCELOSE - ANTICORPOS IGM</td>
+            <td id="price99">130,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="100"></td>
+            <td id="code100">C19</td>
+            <td id="name100">CA 19-9</td>
+            <td id="price100">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="101"></td>
+            <td id="code101">C1E</td>
+            <td id="name101">INIBIDOR DE C1 - ESTERASE</td>
+            <td id="price101">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="102"></td>
+            <td id="code102">C1EA</td>
+            <td id="name102">INIBIDOR DE C1 - ESTERASE ATIVIDADE</td>
+            <td id="price102">65,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="103"></td>
+            <td id="code103">C1Q</td>
+            <td id="name103">COMPLEMENTO C1Q</td>
+            <td id="price103">120,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="104"></td>
+            <td id="code104">C204</td>
+            <td id="name104">IGE ESPECIFICO - DROGAS - AMOXICILINA</td>
+            <td id="price104">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="105"></td>
+            <td id="code105">C207</td>
+            <td id="name105">IGE ESPECIFICO ÁCIDO ACETILSALICÍLICO</td>
+            <td id="price105">90,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="106"></td>
+            <td id="code106">C312</td>
+            <td id="name106">IGE ESPECIFICO PROTEINAS DO LEITE</td>
+            <td id="price106">100,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="107"></td>
+            <td id="code107">C50</td>
+            <td id="name107">COMPLEMENTO TOTAL - CH50</td>
+            <td id="price107">45,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="108"></td>
+            <td id="code108">C677</td>
+            <td id="name108">MTHFR - MUTACAO C677T</td>
+            <td id="price108">250,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="109"></td>
+            <td id="code109">CA125</td>
+            <td id="name109">CA 125</td>
+            <td id="price109">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="110"></td>
+            <td id="code110">CA153</td>
+            <td id="name110">CA 15.3</td>
+            <td id="price110">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="111"></td>
+            <td id="code111">CA24</td>
+            <td id="name111">CÁLCIO URINÁRIO 24 HORAS</td>
+            <td id="price111">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="112"></td>
+            <td id="code112">CA50</td>
+            <td id="name112">CA 50</td>
+            <td id="price112">80,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="113"></td>
+            <td id="code113">CA724</td>
+            <td id="name113">CA 72-4</td>
+            <td id="price113">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="114"></td>
+            <td id="code114">CADMS</td>
+            <td id="name114">CADMIO SANGUÍNEO</td>
+            <td id="price114">50,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="115"></td>
+            <td id="code115">CAIO</td>
+            <td id="name115">DOSAGEM DE CALCIO IONICO</td>
+            <td id="price115">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="116"></td>
+            <td id="code116">CALCI</td>
+            <td id="name116">DOSAGEM DE CALCIO</td>
+            <td id="price116">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="117"></td>
+            <td id="code117">CALCT</td>
+            <td id="name117">CALCITONINA</td>
+            <td id="price117">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="118"></td>
+            <td id="code118">CALPR</td>
+            <td id="name118">CALPROTECTINA EM FEZES</td>
+            <td id="price118">180,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="119"></td>
+            <td id="code119">CALUR</td>
+            <td id="name119">CÁLCULO URINÁRIO - ANÁLISE FÍSICO-QUÍMICA</td>
+            <td id="price119">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="120"></td>
+            <td id="code120">CALVE</td>
+            <td id="name120">CÁLCULO VESICULAR - ANÁLISE</td>
+            <td id="price120">70,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="121"></td>
+            <td id="code121">CARBA</td>
+            <td id="name121">CARBAMAZEPINA</td>
+            <td id="price121">25,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="122"></td>
+            <td id="code122">CARBG</td>
+            <td id="name122">CARIÓTIPO BANDA G</td>
+            <td id="price122">570,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="123"></td>
+            <td id="code123">CARDA</td>
+            <td id="name123">CARDIOLIPINA IgA</td>
+            <td id="price123">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="124"></td>
+            <td id="code124">CARDG</td>
+            <td id="name124">CARDIOLIPINA IgG</td>
+            <td id="price124">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="125"></td>
+            <td id="code125">CARDI</td>
+            <td id="name125">CARDIOLIPINA IGG E IGM</td>
+            <td id="price125">60,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="126"></td>
+            <td id="code126">CARDM</td>
+            <td id="name126">CARDIOLIPINA IgM</td>
+            <td id="price126">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="127"></td>
+            <td id="code127">CATEC</td>
+            <td id="name127">CATECOLAMINAS URINÁRIAS</td>
+            <td id="price127">120,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="128"></td>
+            <td id="code128">CATEP</td>
+            <td id="name128">CATECOLAMINAS PLASMATICAS</td>
+            <td id="price128">250,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="129"></td>
+            <td id="code129">CAUR</td>
+            <td id="name129">CÁLCIO URINÁRIO - AMOSTRA ISOLADA</td>
+            <td id="price129">10,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="130"></td>
+            <td id="code130">CAXUI</td>
+            <td id="name130">CAXUMBA IgM e IgG</td>
+            <td id="price130">50,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="131"></td>
+            <td id="code131">CC3</td>
+            <td id="name131">COMPLEMENTO C3</td>
+            <td id="price131">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="132"></td>
+            <td id="code132">CC4</td>
+            <td id="name132">COMPLEMENTO C4</td>
+            <td id="price132">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="133"></td>
+            <td id="code133">CD20</td>
+            <td id="name133">LINFOCITOS CD20</td>
+            <td id="price133">240,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="134"></td>
+            <td id="code134">CD3</td>
+            <td id="name134">LINFOCITOS CD3</td>
+            <td id="price134">50,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="135"></td>
+            <td id="code135">CD4</td>
+            <td id="name135">LINFÓCITOS T AUXILIADORES CD4 +</td>
+            <td id="price135">60,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="136"></td>
+            <td id="code136">CD8</td>
+            <td id="name136">LINFOCITOS T CITOTOXICO CD8+</td>
+            <td id="price136">65,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="137"></td>
+            <td id="code137">CELIA</td>
+            <td id="name137">HLA DQ2 E DQ8 - DOENÇA CELÍACA</td>
+            <td id="price137">195,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="138"></td>
+            <td id="code138">CERUP</td>
+            <td id="name138">CERULOPLASMINA</td>
+            <td id="price138">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="139"></td>
+            <td id="code139">CFUQ</td>
+            <td id="name139">COPROPORFIRINA</td>
+            <td id="price139">100,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="140"></td>
+            <td id="code140">CHAIF</td>
+            <td id="name140">TRYPANOSSOMA CRUZI IGG</td>
+            <td id="price140">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="141"></td>
+            <td id="code141">CHAMI</td>
+            <td id="name141">TRYPANOSSOMA CRUZI IGM</td>
+            <td id="price141">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="142"></td>
+            <td id="code142">CHB</td>
+            <td id="name142">CARBOXIHEMOGLOBINA</td>
+            <td id="price142">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="143"></td>
+            <td id="code143">CHLGT</td>
+            <td id="name143">CHLAMYDIA TRACHOMATIS ANTICORPOS IGG</td>
+            <td id="price143">65,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="144"></td>
+            <td id="code144">CHUSG</td>
+            <td id="name144">CHUMBO SANGUÍNEO</td>
+            <td id="price144">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="145"></td>
+            <td id="code145">CHUUI</td>
+            <td id="name145">CHUMBO URINÁRIO INÍCIO DE JORNADA</td>
+            <td id="price145">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="146"></td>
+            <td id="code146">CHUUR</td>
+            <td id="name146">CHUMBO URINÁRIO FINAL DE JORNADA</td>
+            <td id="price146">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="147"></td>
+            <td id="code147">CICLO</td>
+            <td id="name147">CICLOSPORINA</td>
+            <td id="price147">50,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="148"></td>
+            <td id="code148">CISP</td>
+            <td id="name148">CISTINA - PESQUISA</td>
+            <td id="price148">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="149"></td>
+            <td id="code149">CISQT</td>
+            <td id="name149">CISTINA - PESQUISA QUANTITATIVO</td>
+            <td id="price149">110,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="150"></td>
+            <td id="code150">CITAS</td>
+            <td id="name150">CITOLOGIA ONCOTICA LIQUIDO ASCITICO</td>
+            <td id="price150">75,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="151"></td>
+            <td id="code151">CITO</td>
+            <td id="name151">CITOLOGIA EM MEIO LIQUIDO</td>
+            <td id="price151">50,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="152"></td>
+            <td id="code152">CITOL</td>
+            <td id="name152">CITOLOGIA ONCOTICA DE LIQUIDOS</td>
+            <td id="price152">75,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="153"></td>
+            <td id="code153">CITPL</td>
+            <td id="name153">CITOLOGIA ONCOTICA LIQUIDO PLEURAL</td>
+            <td id="price153">75,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="154"></td>
+            <td id="code154">CITR</td>
+            <td id="name154">ÁCIDO CITRICO CITRATO SERICO</td>
+            <td id="price154">110,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="155"></td>
+            <td id="code155">CITRA</td>
+            <td id="name155">CITRATO - URINA 24 HORAS</td>
+            <td id="price155">25,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="156"></td>
+            <td id="code156">CITRI</td>
+            <td id="name156">CITRATO AMOSTRA ISOLADA</td>
+            <td id="price156">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="157"></td>
+            <td id="code157">CLCRE</td>
+            <td id="name157">CLEARENCE DE CREATININA</td>
+            <td id="price157">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="158"></td>
+            <td id="code158">CLDIF</td>
+            <td id="name158">CLOSTRIDIUM DIFFICILE - TOXINA A +</td>
+            <td id="price158">150,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="159"></td>
+            <td id="code159">CLE</td>
+            <td id="name159">PESQUISA DE CÉLULAS LE</td>
+            <td id="price159">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="160"></td>
+            <td id="code160">CLFF</td>
+            <td id="name160">CAPACIDADE LATENTE DE LIGAÇÃO DO FERRO</td>
+            <td id="price160">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="161"></td>
+            <td id="code161">CLORO</td>
+            <td id="name161">DOSAGEM DE CLORO</td>
+            <td id="price161">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="162"></td>
+            <td id="code162">CMPCR</td>
+            <td id="name162">CITOMEGALOVIRUS DETECÇÃO POR PCR</td>
+            <td id="price162">510,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="163"></td>
+            <td id="code163">CMVAV</td>
+            <td id="name163">AVIDEZ - ANTICORPOS CITOMEGALOVIRUS</td>
+            <td id="price163">70,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="164"></td>
+            <td id="code164">CMVG</td>
+            <td id="name164">CITOMEGALOVIRUS IgG</td>
+            <td id="price164">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="165"></td>
+            <td id="code165">CMVM</td>
+            <td id="name165">CITOMEGALOVIRUS IgM</td>
+            <td id="price165">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="166"></td>
+            <td id="code166">COA</td>
+            <td id="name166">COAGULOGRAMA COMPLETO</td>
+            <td id="price166">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="167"></td>
+            <td id="code167">COB24</td>
+            <td id="name167">COBRE URINARIO 24 HORAS</td>
+            <td id="price167">25,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="168"></td>
+            <td id="code168">COBR</td>
+            <td id="name168">COBRE SERICO</td>
+            <td id="price168">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="169"></td>
+            <td id="code169">COLIN</td>
+            <td id="name169">COLINESTERASE</td>
+            <td id="price169">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="170"></td>
+            <td id="code170">COPRO</td>
+            <td id="name170">COPROLOGICO FUNCIONAL</td>
+            <td id="price170">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="171"></td>
+            <td id="code171">CORS3</td>
+            <td id="name171">CORTISOL SALIVAR AMOSTRA NOITE</td>
+            <td id="price171">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="172"></td>
+            <td id="code172">CORT</td>
+            <td id="name172">CORTISOL BASAL (08h)</td>
+            <td id="price172">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="173"></td>
+            <td id="code173">CORTS</td>
+            <td id="name173">CORTISOL SALIVAR - AMOSTRA MANHÃ</td>
+            <td id="price173">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="174"></td>
+            <td id="code174">CORTU</td>
+            <td id="name174">CORTISOL LIVRE URINA 24H</td>
+            <td id="price174">50,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="175"></td>
+            <td id="code175">COVGM</td>
+            <td id="name175">TESTE RAPIDO CORONAVIRUS IGG/IGM</td>
+            <td id="price175">70,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="176"></td>
+            <td id="code176">CPK</td>
+            <td id="name176">DOSAGEM DE CREATINO FOSFOQUINASE-CPK</td>
+            <td id="price176">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="177"></td>
+            <td id="code177">CPKMB</td>
+            <td id="name177">DOSAGEM DE CREATINO FOSFOQUINASE-MB</td>
+            <td id="price177">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="178"></td>
+            <td id="code178">CQ10</td>
+            <td id="name178">COENZIMA Q10</td>
+            <td id="price178">300,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="179"></td>
+            <td id="code179">CRE</td>
+            <td id="name179">DOSAGEM DE CREATININA</td>
+            <td id="price179">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="180"></td>
+            <td id="code180">CRE24</td>
+            <td id="name180">CREATININA - URINA 24 HORAS</td>
+            <td id="price180">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="181"></td>
+            <td id="code181">CREU</td>
+            <td id="name181">CREATININA EM AMOSTRA ISOLADA</td>
+            <td id="price181">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="182"></td>
+            <td id="code182">CRIO</td>
+            <td id="name182">CRIOGOBULINAS - PESQUISA</td>
+            <td id="price182">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="183"></td>
+            <td id="code183">CROAS</td>
+            <td id="name183">CROMATOGRAFIA DE AMINOACIDOS - SANG</td>
+            <td id="price183">100,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="184"></td>
+            <td id="code184">CROMA</td>
+            <td id="name184">CROMOGRANINA A</td>
+            <td id="price184">410,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="185"></td>
+            <td id="code185">CROMO</td>
+            <td id="name185">CROMO SÉRICO</td>
+            <td id="price185">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="186"></td>
+            <td id="code186">CTF</td>
+            <td id="name186">DOSAGEM DE COLESTEROL TOTAL E FRAÇÕES</td>
+            <td id="price186">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="187"></td>
+            <td id="code187">CTNG</td>
+            <td id="name187">CHLAMYDIA TRACHOMATIS E NEISSERIA GONORROHOEAE (PCR)</td>
+            <td id="price187">340,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="188"></td>
+            <td id="code188">CTT</td>
+            <td id="name188">CAPACIDADE TOTAL DE LIGACAO DO FERRO</td>
+            <td id="price188">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="189"></td>
+            <td id="code189">CTX</td>
+            <td id="name189">CTX INTERLIGADORES C TERMINAIS</td>
+            <td id="price189">100,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="190"></td>
+            <td id="code190">CUBAR</td>
+            <td id="name190">CULTURA E ANTIBIOGRAMA - BAAR</td>
+            <td id="price190">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="191"></td>
+            <td id="code191">CUDIR</td>
+            <td id="name191">COOMBS DIRETO</td>
+            <td id="price191">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="192"></td>
+            <td id="code192">CUIND</td>
+            <td id="name192">COOMBS INDIRETO</td>
+            <td id="price192">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="193"></td>
+            <td id="code193">CULB</td>
+            <td id="name193">CULTURA E ANTIBIOGRAMA - URINA</td>
+            <td id="price193">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="194"></td>
+            <td id="code194">CULE</td>
+            <td id="name194">CULTURA E ANTIBIOGRAMA - ESCARRO BAAR</td>
+            <td id="price194">45,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="195"></td>
+            <td id="code195">CULES</td>
+            <td id="name195">CULTURA E ANTIBIOGRAMA - ESPERMA</td>
+            <td id="price195">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="196"></td>
+            <td id="code196">CULF</td>
+            <td id="name196">CULTURA E ANTIBIOGRAMA FEZES - COPROCULTURA</td>
+            <td id="price196">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="197"></td>
+            <td id="code197">CULFU</td>
+            <td id="name197">CULTURA E ANTIFUNGIGRAMA - FUNGOS</td>
+            <td id="price197">45,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="198"></td>
+            <td id="code198">CULLA</td>
+            <td id="name198">CULTURA E ANTOBIOGRAMA - LIQUIDO ASCITICO</td>
+            <td id="price198">50,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="199"></td>
+            <td id="code199">CULLS</td>
+            <td id="name199">CULTURA E ANTIBIOGRAMA - LAVADO BRONCO ALVEOLAR</td>
+            <td id="price199">45,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="200"></td>
+            <td id="code200">CULNE</td>
+            <td id="name200">CULTURA E ANTBIOGRAMA - GONOCOCO</td>
+            <td id="price200">50,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="201"></td>
+            <td id="code201">CULO</td>
+            <td id="name201">CULTURA E ANTIBIOGRAMA - SECRECAO OROFARINGE</td>
+            <td id="price201">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="202"></td>
+            <td id="code202">CULOS</td>
+            <td id="name202">CULTURA E ANTIBIOGRAMA - OUTROS MATERIAIS</td>
+            <td id="price202">45,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="203"></td>
+            <td id="code203">CULOU</td>
+            <td id="name203">CULTURA E ANTIBIOGRAMA - SECRECAO DE OUVIDO</td>
+            <td id="price203">45,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="204"></td>
+            <td id="code204">CULSB</td>
+            <td id="name204">CULTURA E ANTIBIOGRAMA - STREPTOCOCOS GRUPO B</td>
+            <td id="price204">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="205"></td>
+            <td id="code205">CULSO</td>
+            <td id="name205">CULTURA E ANTIBIOGRAMA - SECRECAO OCULAR</td>
+            <td id="price205">45,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="206"></td>
+            <td id="code206">CULST</td>
+            <td id="name206">CULTURA E ANTIBIOGRAMA - ASPIRADO TRAQUEAL</td>
+            <td id="price206">45,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="207"></td>
+            <td id="code207">CULU</td>
+            <td id="name207">CULTURA E ANTBIOGRAMA - SECRECAO URETRAL</td>
+            <td id="price207">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="208"></td>
+            <td id="code208">CULV</td>
+            <td id="name208">CULTURA E ANTIBIOGRAMA - SECRECAO VAGINAL</td>
+            <td id="price208">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="209"></td>
+            <td id="code209">CURGI</td>
+            <td id="name209">CURVA GLICO INSULINA</td>
+            <td id="price209">150,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="210"></td>
+            <td id="code210">CURVA</td>
+            <td id="name210">CURVA GLICEMICA CLASSICA 5 DOSAGENS</td>
+            <td id="price210">45,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="211"></td>
+            <td id="code211">D2</td>
+            <td id="name211">IGE ESPECIFICO - ACAROS - D. FARINAE</td>
+            <td id="price211">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="212"></td>
+            <td id="code212">D201</td>
+            <td id="name212">IGE ESPECIFICO - ÁCAROS - BLOMIA TROPICALI</td>
+            <td id="price212">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="213"></td>
+            <td id="code213">DDIM</td>
+            <td id="name213">D-DIMERO</td>
+            <td id="price213">90,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="214"></td>
+            <td id="code214">DENGG</td>
+            <td id="name214">DENGUE SOROLOGIA IGG</td>
+            <td id="price214">50,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="215"></td>
+            <td id="code215">DENGM</td>
+            <td id="name215">TESTE RAPIDO DENGUE IGG/IGM</td>
+            <td id="price215">60,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="216"></td>
+            <td id="code216">DENS1</td>
+            <td id="name216">TESTE RAPIDO DENGUE NS1</td>
+            <td id="price216">65,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="217"></td>
+            <td id="code217">DHEA</td>
+            <td id="name217">DEHIDROEPIANDROSTERONA DHEA</td>
+            <td id="price217">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="218"></td>
+            <td id="code218">DHEAS</td>
+            <td id="name218">DEHIDROEPIANDROSTERONA SULFATO</td>
+            <td id="price218">25,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="219"></td>
+            <td id="code219">DHT</td>
+            <td id="name219">DEHIDROTESTOSTERONA - DHT</td>
+            <td id="price219">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="220"></td>
+            <td id="code220">DNADP</td>
+            <td id="name220">ANTI-DNA DUPLA HELICE</td>
+            <td id="price220">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="221"></td>
+            <td id="code221">DSTPC</td>
+            <td id="name221">PAINEL DST - DETECÇÃO POR PCR</td>
+            <td id="price221">160,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="222"></td>
+            <td id="code222">DUO</td>
+            <td id="name222">TESTE PATERNIDADE FILHO E SUPOSTO PAI</td>
+            <td id="price222">290,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="223"></td>
+            <td id="code223">DX1</td>
+            <td id="name223">IGE PAINEL - ÁCAROS / PARTÍCULAS</td>
+            <td id="price223">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="224"></td>
+            <td id="code224">E1</td>
+            <td id="name224">IGE ESPECIFICO - EPITELIOS - CASPA DE GATO</td>
+            <td id="price224">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="225"></td>
+            <td id="code225">E2</td>
+            <td id="name225">IGE ESPECIFICO - EPITELIOS- PELO DE CAO</td>
+            <td id="price225">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="226"></td>
+            <td id="code226">EAS</td>
+            <td id="name226">SUMÁRIO DE URINA</td>
+            <td id="price226">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="227"></td>
+            <td id="code227">EBARG</td>
+            <td id="name227">EPSTEIN BAAR IGG ANTICORPOS</td>
+            <td id="price227">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="228"></td>
+            <td id="code228">EBARM</td>
+            <td id="name228">EPSTEIN BAAR IGM ANTICORPOS</td>
+            <td id="price228">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="229"></td>
+            <td id="code229">ECANG</td>
+            <td id="name229">ENZIMA CONVERSORA ANGIOTENSINA</td>
+            <td id="price229">150,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="230"></td>
+            <td id="code230">EIM</td>
+            <td id="name230">ERROS INATOS DO METABOLISMO</td>
+            <td id="price230">100,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="231"></td>
+            <td id="code231">ELASP</td>
+            <td id="name231">ELASTASE PANCREÁTICA</td>
+            <td id="price231">250,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="232"></td>
+            <td id="code232">ELFPR</td>
+            <td id="name232">ELETROFORESE PROTEINAS</td>
+            <td id="price232">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="233"></td>
+            <td id="code233">ELHB</td>
+            <td id="name233">ELETROFORESE DE HEMOGLOBINAS</td>
+            <td id="price233">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="234"></td>
+            <td id="code234">ELIPO</td>
+            <td id="name234">ELETROFORESE DE LIPOPROTEÍNAS</td>
+            <td id="price234">50,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="235"></td>
+            <td id="code235">ELPRU</td>
+            <td id="name235">ELETROFORESE DE PROTEINAS URINARIAS</td>
+            <td id="price235">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="236"></td>
+            <td id="code236">EPOIT</td>
+            <td id="name236">ERITROEPOETINA</td>
+            <td id="price236">50,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="237"></td>
+            <td id="code237">ERITR</td>
+            <td id="name237">ERITROGRAMA</td>
+            <td id="price237">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="238"></td>
+            <td id="code238">ESPE</td>
+            <td id="name238">ESPERMOGRAMA COMPLETO</td>
+            <td id="price238">90,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="239"></td>
+            <td id="code239">ESPE1</td>
+            <td id="name239">ESPERMOGRAMA POS VASECTOMIA</td>
+            <td id="price239">90,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="240"></td>
+            <td id="code240">ESPKR</td>
+            <td id="name240">ESPERMOGRAMA MORFOLOGIA KRUGER</td>
+            <td id="price240">60,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="241"></td>
+            <td id="code241">ESTR</td>
+            <td id="name241">ESTRADIOL</td>
+            <td id="price241">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="242"></td>
+            <td id="code242">ESTR1</td>
+            <td id="name242">ESTRADIOL SEDE</td>
+            <td id="price242">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="243"></td>
+            <td id="code243">ESTRO</td>
+            <td id="name243">ESTRONA ESTROGENIO</td>
+            <td id="price243">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="244"></td>
+            <td id="code244">ETA</td>
+            <td id="name244">ETANOL</td>
+            <td id="price244">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="245"></td>
+            <td id="code245">ETAU</td>
+            <td id="name245">ETANOL URINARIO</td>
+            <td id="price245">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="246"></td>
+            <td id="code246">ETFG</td>
+            <td id="name246">ESTIMATIVA TAXA DE FILTRACAO GLOMERULAR</td>
+            <td id="price246">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="247"></td>
+            <td id="code247">EX1</td>
+            <td id="name247">IGE PAINEL - ANIMAIS</td>
+            <td id="price247">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="248"></td>
+            <td id="code248">EX72</td>
+            <td id="name248">IGE ESPECIFICO PENAS</td>
+            <td id="price248">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="249"></td>
+            <td id="code249">F1</td>
+            <td id="name249">IGE ESPECIFICO CLARA DE OVO</td>
+            <td id="price249">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="250"></td>
+            <td id="code250">F13</td>
+            <td id="name250">IGE ESPECIFICO- ALIMENTOS AMENDOIM</td>
+            <td id="price250">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="251"></td>
+            <td id="code251">F14</td>
+            <td id="name251">IGE ESPECIFICO - ALIMENTOS - SOJA</td>
+            <td id="price251">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="252"></td>
+            <td id="code252">F15</td>
+            <td id="name252">IGE ESPECIFICO FEIJAO BRANCO</td>
+            <td id="price252">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="253"></td>
+            <td id="code253">F2</td>
+            <td id="name253">IGE ESPECIFICO PARA LEITE DE VACA</td>
+            <td id="price253">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="254"></td>
+            <td id="code254">F23</td>
+            <td id="name254">IGE ESPECIFICO CARANGUEIJO</td>
+            <td id="price254">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="255"></td>
+            <td id="code255">F233</td>
+            <td id="name255">IGE ESPECIFICO ALIMENTOS - OVO MUCÓIDE</td>
+            <td id="price255">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="256"></td>
+            <td id="code256">F24</td>
+            <td id="name256">IGE ESPECIFICO CAMARAO</td>
+            <td id="price256">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="257"></td>
+            <td id="code257">F245</td>
+            <td id="name257">IGE ESPECIFICO - ALIMENTOS OVOS</td>
+            <td id="price257">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="258"></td>
+            <td id="code258">F25</td>
+            <td id="name258">IGE ESPECIFICO TOMATE</td>
+            <td id="price258">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="259"></td>
+            <td id="code259">F26</td>
+            <td id="name259">IGE ESPECIFICO CARNE DE PORCO</td>
+            <td id="price259">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="260"></td>
+            <td id="code260">F27</td>
+            <td id="name260">IGE ESPECIFICO CARNE DE VACA</td>
+            <td id="price260">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="261"></td>
+            <td id="code261">F4</td>
+            <td id="name261">IGE ESPECIFICO TRIGO</td>
+            <td id="price261">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="262"></td>
+            <td id="code262">F5F2</td>
+            <td id="name262">FATOR V DE LEIDEN C1691A E G20210A</td>
+            <td id="price262">150,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="263"></td>
+            <td id="code263">F5PCR</td>
+            <td id="name263">FATOR V LEIDEN - PESQUISA DA MUTACAO</td>
+            <td id="price263">210,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="264"></td>
+            <td id="code264">F75</td>
+            <td id="name264">IGE ESPECIFICO GEMA DE OVO</td>
+            <td id="price264">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="265"></td>
+            <td id="code265">F76</td>
+            <td id="name265">IGE ESPECIFICO A-LACTOALBUMINA</td>
+            <td id="price265">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="266"></td>
+            <td id="code266">F77</td>
+            <td id="name266">IGE ESPECIFICO B-LACTOGLOBULINA</td>
+            <td id="price266">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="267"></td>
+            <td id="code267">F78</td>
+            <td id="name267">IGE ESPECIFICO CASEINA</td>
+            <td id="price267">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="268"></td>
+            <td id="code268">F79</td>
+            <td id="name268">IGE ESPECIFICO GLUTEN</td>
+            <td id="price268">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="269"></td>
+            <td id="code269">F8</td>
+            <td id="name269">IGE ESPECIFICO MILHO</td>
+            <td id="price269">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="270"></td>
+            <td id="code270">F92</td>
+            <td id="name270">IGE ESPECIFICO BANANA</td>
+            <td id="price270">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="271"></td>
+            <td id="code271">F93</td>
+            <td id="name271">IGE ESPECIFICO CACAU</td>
+            <td id="price271">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="272"></td>
+            <td id="code272">FAL</td>
+            <td id="name272">DOSAGEM DE FOSFATASE ALCALINA</td>
+            <td id="price272">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="273"></td>
+            <td id="code273">FALCI</td>
+            <td id="name273">FALCIZACAO PESQUISA</td>
+            <td id="price273">25,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="274"></td>
+            <td id="code274">FALCO</td>
+            <td id="name274">FOSFATASE ALCALINA ÓSSEA</td>
+            <td id="price274">150,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="275"></td>
+            <td id="code275">FAN</td>
+            <td id="name275">FATOR ANTI-NUCLEAR</td>
+            <td id="price275">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="276"></td>
+            <td id="code276">FAP</td>
+            <td id="name276">FOSFATASE ACIDA PROSTATICA</td>
+            <td id="price276">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="277"></td>
+            <td id="code277">FAT</td>
+            <td id="name277">FOSFATASE ACIDA TOTAL</td>
+            <td id="price277">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="278"></td>
+            <td id="code278">FAT12</td>
+            <td id="name278">FATOR XII</td>
+            <td id="price278">220,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="279"></td>
+            <td id="code279">FAT2</td>
+            <td id="name279">FATOR II</td>
+            <td id="price279">120,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="280"></td>
+            <td id="code280">FAT5C</td>
+            <td id="name280">FATOR V DOSAGEM</td>
+            <td id="price280">60,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="281"></td>
+            <td id="code281">FAT8</td>
+            <td id="name281">FATOR VIII</td>
+            <td id="price281">90,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="282"></td>
+            <td id="code282">FAT9</td>
+            <td id="name282">FATOR IX</td>
+            <td id="price282">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="283"></td>
+            <td id="code283">FC508</td>
+            <td id="name283">FIBROSE CISTICA - MUTACAO F508</td>
+            <td id="price283">320,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="284"></td>
+            <td id="code284">FENB</td>
+            <td id="name284">FENOBARBITAL</td>
+            <td id="price284">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="285"></td>
+            <td id="code285">FENP</td>
+            <td id="name285">FENILCETONURIA PESQUISA</td>
+            <td id="price285">45,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="286"></td>
+            <td id="code286">FER</td>
+            <td id="name286">DOSAGEM DE FERRO SERICO</td>
+            <td id="price286">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="287"></td>
+            <td id="code287">FERR1</td>
+            <td id="name287">DOSAGEM DE FERRITINA SEDE</td>
+            <td id="price287">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="288"></td>
+            <td id="code288">FERRI</td>
+            <td id="name288">DOSAGEM DE FERRITINA</td>
+            <td id="price288">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="289"></td>
+            <td id="code289">FIBRI</td>
+            <td id="name289">FIBRINOGENIO</td>
+            <td id="price289">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="290"></td>
+            <td id="code290">FOS</td>
+            <td id="name290">DOSAGEM DE FOSFORO</td>
+            <td id="price290">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="291"></td>
+            <td id="code291">FOS24</td>
+            <td id="name291">FÓSFORO URINÁRIO 24 HS</td>
+            <td id="price291">25,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="292"></td>
+            <td id="code292">FOSFL</td>
+            <td id="name292">FOSFOLIPIDIOS</td>
+            <td id="price292">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="293"></td>
+            <td id="code293">FOSU</td>
+            <td id="name293">FOSFORO URINARIO - AMOSTRA ISOLADA</td>
+            <td id="price293">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="294"></td>
+            <td id="code294">FR</td>
+            <td id="name294">FATOR REUMATOIDE</td>
+            <td id="price294">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="295"></td>
+            <td id="code295">FRUTO</td>
+            <td id="name295">FRUTOSAMINA</td>
+            <td id="price295">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="296"></td>
+            <td id="code296">FSH</td>
+            <td id="name296">HORMÔNIO FOLÌCULO ESTIMULANTE - FSH</td>
+            <td id="price296">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="297"></td>
+            <td id="code297">FTAG</td>
+            <td id="name297">FTA-ABS IGG</td>
+            <td id="price297">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="298"></td>
+            <td id="code298">FTAM</td>
+            <td id="name298">FTA-ABS IGM</td>
+            <td id="price298">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="299"></td>
+            <td id="code299">FVOWI</td>
+            <td id="name299">FATOR VON WILLEBRAND</td>
+            <td id="price299">250,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="300"></td>
+            <td id="code300">FX1</td>
+            <td id="name300">IGE MÚLTIPLO -AMENDOIM, AVELA</td>
+            <td id="price300">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="301"></td>
+            <td id="code301">FX2</td>
+            <td id="name301">IGE MÚLTIPLO TRIAGEM DE FRUTOS DO</td>
+            <td id="price301">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="302"></td>
+            <td id="code302">FX3</td>
+            <td id="name302">IGE MULTIPLO Cereais: Trigo, aveia,</td>
+            <td id="price302">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="303"></td>
+            <td id="code303">FX5</td>
+            <td id="name303">IGE MÚLTIPLO CLARA DE OVO,LEITE,TR</td>
+            <td id="price303">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="304"></td>
+            <td id="code304">G6PDS</td>
+            <td id="name304">GLICOSE-6-FOS.DESIDROGENASE</td>
+            <td id="price304">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="305"></td>
+            <td id="code305">GAD</td>
+            <td id="name305">ANTI-GAD</td>
+            <td id="price305">180,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="306"></td>
+            <td id="code306">GASTR</td>
+            <td id="name306">GASTRINA</td>
+            <td id="price306">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="307"></td>
+            <td id="code307">GGT</td>
+            <td id="name307">DOSAGEM DE GAMA-GLUTAMILTRANSFERASE - GGT</td>
+            <td id="price307">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="308"></td>
+            <td id="code308">GLI</td>
+            <td id="name308">DOSAGEM DE GLICOSE JEJUM</td>
+            <td id="price308">10,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="309"></td>
+            <td id="code309">GLIGT</td>
+            <td id="name309">GLOBULINA LIGADORA DE TIROXINA</td>
+            <td id="price309">85,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="310"></td>
+            <td id="code310">GLIPP</td>
+            <td id="name310">GLICOSE POS-PRANDIAL</td>
+            <td id="price310">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="311"></td>
+            <td id="code311">GSRH</td>
+            <td id="name311">GRUPO SANGUINEO ABO/RH</td>
+            <td id="price311">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="312"></td>
+            <td id="code312">GX2</td>
+            <td id="name312">IGE PAINEL POLÉN DE GRAMÍNEAS</td>
+            <td id="price312">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="313"></td>
+            <td id="code313">HAM</td>
+            <td id="name313">HORMONIO ANTI-MULLERIANO</td>
+            <td id="price313">190,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="314"></td>
+            <td id="code314">HANSE</td>
+            <td id="name314">BACILOSCOPIA DE HANSEN</td>
+            <td id="price314">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="315"></td>
+            <td id="code315">HAPTO</td>
+            <td id="name315">HAPTOGLOBINA</td>
+            <td id="price315">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="316"></td>
+            <td id="code316">HB</td>
+            <td id="name316">HEMOGLOBINA</td>
+            <td id="price316">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="317"></td>
+            <td id="code317">HBCG</td>
+            <td id="name317">ANTI HBC TOTAL</td>
+            <td id="price317">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="318"></td>
+            <td id="code318">HBCIG</td>
+            <td id="name318">ANTI HBC IGG</td>
+            <td id="price318">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="319"></td>
+            <td id="code319">HBCM</td>
+            <td id="name319">ANTI HBC IGM</td>
+            <td id="price319">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="320"></td>
+            <td id="code320">HBEAG</td>
+            <td id="name320">HEPATITE B ANTIGENO HBEAG</td>
+            <td id="price320">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="321"></td>
+            <td id="code321">HBGL1</td>
+            <td id="name321">DOSAGEM DE HEMOGLOBINA GLICOSILADA SEDE</td>
+            <td id="price321">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="322"></td>
+            <td id="code322">HBQL</td>
+            <td id="name322">HBS ANTI</td>
+            <td id="price322">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="323"></td>
+            <td id="code323">HC</td>
+            <td id="name323">HEMOGRAMA COMPLETO C/PLAQUETAS</td>
+            <td id="price323">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="324"></td>
+            <td id="code324">HCGM</td>
+            <td id="name324">BETA HCG (MASCULINO)</td>
+            <td id="price324">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="325"></td>
+            <td id="code325">HCGQT</td>
+            <td id="name325">BETA HCG QUANTITATIVO</td>
+            <td id="price325">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="326"></td>
+            <td id="code326">HCV1</td>
+            <td id="name326">TESTE RAPIDO HEPATITE C HCV</td>
+            <td id="price326">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="327"></td>
+            <td id="code327">HEMA1</td>
+            <td id="name327">HEMOCULTURA AUTOMATIZADA AMOSTRA1</td>
+            <td id="price327">60,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="328"></td>
+            <td id="code328">HEMA2</td>
+            <td id="name328">HEMOCULTURA AUTOMATIZADA AMOSTRA2</td>
+            <td id="price328">60,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="329"></td>
+            <td id="code329">HEPD</td>
+            <td id="name329">HEPATITE D ANTICORPOS TOTAIS ANTI-HDV</td>
+            <td id="price329">70,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="330"></td>
+            <td id="code330">HERG</td>
+            <td id="name330">HERPES SIMPLES I e II - IGG</td>
+            <td id="price330">45,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="331"></td>
+            <td id="code331">HERM</td>
+            <td id="name331">HERPES SIMPLES I e II - IGM</td>
+            <td id="price331">45,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="332"></td>
+            <td id="code332">HERPS</td>
+            <td id="name332">HERPES SIMPLES I E II - DETC PCR</td>
+            <td id="price332">10,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="333"></td>
+            <td id="code333">HEVG</td>
+            <td id="name333">HEPATITE E (ANTI-HEV) IgG</td>
+            <td id="price333">220,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="334"></td>
+            <td id="code334">HEVM</td>
+            <td id="name334">HEPATITE E (ANTI-HEV) IGM</td>
+            <td id="price334">130,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="335"></td>
+            <td id="code335">HFE</td>
+            <td id="name335">HEMOCROMATOSE C282Y, H63D E S65C</td>
+            <td id="price335">250,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="336"></td>
+            <td id="code336">HGH</td>
+            <td id="name336">HGH (HORMONIO CRESCIMENTO)</td>
+            <td id="price336">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="337"></td>
+            <td id="code337">HISTO</td>
+            <td id="name337">HISTONA - ANTICORPOS</td>
+            <td id="price337">100,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="338"></td>
+            <td id="code338">HIV</td>
+            <td id="name338">HIV 1 E 2 ANTIGENO E ANTICORPOS</td>
+            <td id="price338">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="339"></td>
+            <td id="code339">HIVQT</td>
+            <td id="name339">HIV DETECCAO DETECCAO POR PCR</td>
+            <td id="price339">280,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="340"></td>
+            <td id="code340">HIVR1</td>
+            <td id="name340">TESTE RAPIDO HIV 1E2</td>
+            <td id="price340">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="341"></td>
+            <td id="code341">HLA27</td>
+            <td id="name341">HLA B27</td>
+            <td id="price341">75,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="342"></td>
+            <td id="code342">HLB51</td>
+            <td id="name342">DETECCAO DE HLA-B51</td>
+            <td id="price342">350,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="343"></td>
+            <td id="code343">HOC</td>
+            <td id="name343">HOMOCISTEINA</td>
+            <td id="price343">60,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="344"></td>
+            <td id="code344">HPA</td>
+            <td id="name344">HELICOBACTER PYLORI IGA</td>
+            <td id="price344">100,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="345"></td>
+            <td id="code345">HPG</td>
+            <td id="name345">HELICOBACTER PYLORI IGG</td>
+            <td id="price345">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="346"></td>
+            <td id="code346">HPM</td>
+            <td id="name346">HELICOBACTER PYLORI IGM</td>
+            <td id="price346">45,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="347"></td>
+            <td id="code347">HPVC</td>
+            <td id="name347">PAPILOMAVÍRUS HUMANO (HPV)</td>
+            <td id="price347">170,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="348"></td>
+            <td id="code348">HTLV</td>
+            <td id="name348">HTLV I/II - ANTICORPOS</td>
+            <td id="price348">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="349"></td>
+            <td id="code349">HVAG</td>
+            <td id="name349">HEPATITE A IGG</td>
+            <td id="price349">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="350"></td>
+            <td id="code350">HVAM</td>
+            <td id="name350">HEPATITE A IGM</td>
+            <td id="price350">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="351"></td>
+            <td id="code351">HX1</td>
+            <td id="name351">IGE PAINEL (HX1) POEIRA</td>
+            <td id="price351">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="352"></td>
+            <td id="code352">HX2</td>
+            <td id="name352">IGE PAINEL (HX2) - PO DE CASA</td>
+            <td id="price352">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="353"></td>
+            <td id="code353">I1</td>
+            <td id="name353">IGE ESPECIFICO- INSETOS - ABELHA</td>
+            <td id="price353">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="354"></td>
+            <td id="code354">I6</td>
+            <td id="name354">IGE ESPECIFICO - INSETOS - BARATA</td>
+            <td id="price354">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="355"></td>
+            <td id="code355">I70</td>
+            <td id="name355">IGE ESPECIFICO - INSETOS - FORMIGA</td>
+            <td id="price355">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="356"></td>
+            <td id="code356">I71</td>
+            <td id="name356">IGE ESPECIFICO - INSETOS - MOSQUITO</td>
+            <td id="price356">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="357"></td>
+            <td id="code357">IAL</td>
+            <td id="name357">ÍNDICE DE ANDRÓGENOS LIVRES</td>
+            <td id="price357">70,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="358"></td>
+            <td id="code358">IGA</td>
+            <td id="name358">IMUNOGLOBULINA A - IGA</td>
+            <td id="price358">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="359"></td>
+            <td id="code359">IGD</td>
+            <td id="name359">IMUNOGLOBULINA D - IGD</td>
+            <td id="price359">75,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="360"></td>
+            <td id="code360">IGE</td>
+            <td id="name360">IMUNOGLOBULINA E - IGE TOTAL</td>
+            <td id="price360">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="361"></td>
+            <td id="code361">IGF1</td>
+            <td id="name361">SOMATOMEDINA C (IGF-1)</td>
+            <td id="price361">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="362"></td>
+            <td id="code362">IGFBP</td>
+            <td id="name362">IGFBP-3 - PROTEÍNA LIGADORA IGF I</td>
+            <td id="price362">70,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="363"></td>
+            <td id="code363">IGG</td>
+            <td id="name363">IMUNOGLOBULINA G - IGG</td>
+            <td id="price363">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="364"></td>
+            <td id="code364">IGM</td>
+            <td id="name364">IMUNOGLUBULINA M - IGM</td>
+            <td id="price364">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="365"></td>
+            <td id="code365">IHB</td>
+            <td id="name365">INDIDE DE HOMA-BETA</td>
+            <td id="price365">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="366"></td>
+            <td id="code366">IHBIR</td>
+            <td id="name366">INDICE DE HOMA-IR</td>
+            <td id="price366">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="367"></td>
+            <td id="code367">IMUN1</td>
+            <td id="name367">IMUNO HISTOQUIMICO ATE 2MARCADORES</td>
+            <td id="price367">610,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="368"></td>
+            <td id="code368">IMUN2</td>
+            <td id="name368">IMUNO HISTOQUIMICO ATE 4MARCADORES</td>
+            <td id="price368">700,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="369"></td>
+            <td id="code369">IMUS</td>
+            <td id="name369">IMUNOFIXACAO DE PROT SERICAS QUALI</td>
+            <td id="price369">210,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="370"></td>
+            <td id="code370">INIB</td>
+            <td id="name370">INIBINA B</td>
+            <td id="price370">650,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="371"></td>
+            <td id="code371">INS</td>
+            <td id="name371">INSULINA</td>
+            <td id="price371">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="372"></td>
+            <td id="code372">INS1</td>
+            <td id="name372">INSULINA SEDE</td>
+            <td id="price372">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="373"></td>
+            <td id="code373">INSL</td>
+            <td id="name373">INSULINA LIVRE</td>
+            <td id="price373">110,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="374"></td>
+            <td id="code374">INT6</td>
+            <td id="name374">INTERLEUCINA 6</td>
+            <td id="price374">70,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="375"></td>
+            <td id="code375">IODO</td>
+            <td id="name375">IODO SERICO</td>
+            <td id="price375">90,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="376"></td>
+            <td id="code376">IODO2</td>
+            <td id="name376">IODO URINA 24HRS</td>
+            <td id="price376">100,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="377"></td>
+            <td id="code377">IST</td>
+            <td id="name377">INDICE DE SATURACAO DA TRANSFERRINA</td>
+            <td id="price377">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="378"></td>
+            <td id="code378">K24</td>
+            <td id="name378">POTASSIO URINARIO 24 HS</td>
+            <td id="price378">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="379"></td>
+            <td id="code379">K39</td>
+            <td id="name379">LEISHMANIOSE VISCERAL K39</td>
+            <td id="price379">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="380"></td>
+            <td id="code380">KAPLA</td>
+            <td id="name380">CADEIAS LIVRES KAPPA - LAMBDA</td>
+            <td id="price380">350,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="381"></td>
+            <td id="code381">KU</td>
+            <td id="name381">POTASSIO URINARIO AMOSTRA ISOLADA</td>
+            <td id="price381">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="382"></td>
+            <td id="code382">LACT</td>
+            <td id="name382">LACTOSE, TESTE DE TOLERÂNCIA PADRÃO</td>
+            <td id="price382">50,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="383"></td>
+            <td id="code383">LACTF</td>
+            <td id="name383">LACTOFERRINA - FEZES</td>
+            <td id="price383">150,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="384"></td>
+            <td id="code384">LACTG</td>
+            <td id="name384">LACTOSE, TESTE GENETICO</td>
+            <td id="price384">150,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="385"></td>
+            <td id="code385">LAMTG</td>
+            <td id="name385">LAMOTRIGINA</td>
+            <td id="price385">330,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="386"></td>
+            <td id="code386">LDH</td>
+            <td id="name386">DOSAGEM DESIDROGENASE LÁCTICA</td>
+            <td id="price386">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="387"></td>
+            <td id="code387">LEISG</td>
+            <td id="name387">LEISHMANIOSE DONOVANI IGG</td>
+            <td id="price387">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="388"></td>
+            <td id="code388">LEISH</td>
+            <td id="name388">LEISHMANIOSE TEGUMENTAR</td>
+            <td id="price388">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="389"></td>
+            <td id="code389">LEISM</td>
+            <td id="name389">LEISHMANIOSE DONOVANI IGM</td>
+            <td id="price389">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="390"></td>
+            <td id="code390">LEPTI</td>
+            <td id="name390">LEPTINA</td>
+            <td id="price390">70,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="391"></td>
+            <td id="code391">LEPTM</td>
+            <td id="name391">LEPTOSPIROSE - ANTICORPOS IGM</td>
+            <td id="price391">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="392"></td>
+            <td id="code392">LEUCF</td>
+            <td id="name392">PESQUISA DE LEUCÓCITOS FECAIS</td>
+            <td id="price392">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="393"></td>
+            <td id="code393">LEUCO</td>
+            <td id="name393">LEUCOGRAMA</td>
+            <td id="price393">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="394"></td>
+            <td id="code394">LEVE</td>
+            <td id="name394">LEVETIRACETAM</td>
+            <td id="price394">290,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="395"></td>
+            <td id="code395">LH</td>
+            <td id="name395">HORMONIO LUTEINIZANTE - LH</td>
+            <td id="price395">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="396"></td>
+            <td id="code396">LIPAS</td>
+            <td id="name396">DOSAGEM DE LIPASE</td>
+            <td id="price396">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="397"></td>
+            <td id="code397">LIQAS</td>
+            <td id="name397">ROTINA LIQUIDO ASCITICO</td>
+            <td id="price397">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="398"></td>
+            <td id="code398">LITIO</td>
+            <td id="name398">LITIO</td>
+            <td id="price398">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="399"></td>
+            <td id="code399">LPA</td>
+            <td id="name399">LIPOPROTEINA A - Lp(a)</td>
+            <td id="price399">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="400"></td>
+            <td id="code400">MACO</td>
+            <td id="name400">MACONHA - CANABINÓIDES - TESTE DE T</td>
+            <td id="price400">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="401"></td>
+            <td id="code401">MACRO</td>
+            <td id="name401">MACROPROLACTINA</td>
+            <td id="price401">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="402"></td>
+            <td id="code402">MAG</td>
+            <td id="name402">DOSAGEM DE MAGNÉSIO</td>
+            <td id="price402">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="403"></td>
+            <td id="code403">MAG24</td>
+            <td id="name403">MAGNÉSIO URINÁRIO 24 HS</td>
+            <td id="price403">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="404"></td>
+            <td id="code404">MALO</td>
+            <td id="name404">ACIDO METILMALÔNICO SÉRICO</td>
+            <td id="price404">290,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="405"></td>
+            <td id="code405">MANUI</td>
+            <td id="name405">MANGANÊS URINÁRIO INÍCIO DE JORNADA</td>
+            <td id="price405">55,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="406"></td>
+            <td id="code406">MELAT</td>
+            <td id="name406">MELATONINA SÉRICA</td>
+            <td id="price406">340,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="407"></td>
+            <td id="code407">MERSG</td>
+            <td id="name407">MERCÚRIO SANGUÍNEO</td>
+            <td id="price407">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="408"></td>
+            <td id="code408">METP</td>
+            <td id="name408">METANEFRINAS FRACIONADAS</td>
+            <td id="price408">390,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="409"></td>
+            <td id="code409">METTF</td>
+            <td id="name409">METANEFRINAS FRAÇÕES E TOTAIS (24HS)</td>
+            <td id="price409">60,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="410"></td>
+            <td id="code410">MIC24</td>
+            <td id="name410">MICROALBUMINURIA - URINA 24HRS</td>
+            <td id="price410">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="411"></td>
+            <td id="code411">MICAL</td>
+            <td id="name411">MICROALBUMINÚRIA AMOSTRA ISOLADA</td>
+            <td id="price411">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="412"></td>
+            <td id="code412">MIOGL</td>
+            <td id="name412">MIOGLOBINA</td>
+            <td id="price412">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="413"></td>
+            <td id="code413">MONOC</td>
+            <td id="name413">MONONUCLEOSE - ANTICORPOS HETERÓFILOS</td>
+            <td id="price413">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="414"></td>
+            <td id="code414">MTHFR</td>
+            <td id="name414">MTHFR MUTACOES C677T E A1298C</td>
+            <td id="price414">370,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="415"></td>
+            <td id="code415">MTRIF</td>
+            <td id="name415">MYCOBACTERIUM TUBERCULOSIS - PESQUISA POR PCR E RESISTÊ</td>
+            <td id="price415">320,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="416"></td>
+            <td id="code416">MUCOP</td>
+            <td id="name416">DOSAGEM DE MUCOPROTEINAS</td>
+            <td id="price416">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="417"></td>
+            <td id="code417">MX1</td>
+            <td id="name417">IGE PAINEL FUNGOS (MX1)</td>
+            <td id="price417">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="418"></td>
+            <td id="code418">NAU</td>
+            <td id="name418">SODIO URINARIO AMOSTRA ISOLADA</td>
+            <td id="price418">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="419"></td>
+            <td id="code419">NAUT</td>
+            <td id="name419">SÓDIO URINÁRIO 24 HORAS</td>
+            <td id="price419">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="420"></td>
+            <td id="code420">OSCAR</td>
+            <td id="name420">OXCARBAZEPINA</td>
+            <td id="price420">120,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="421"></td>
+            <td id="code421">OXAL</td>
+            <td id="name421">ACIDO OXALICO DOSAGEM</td>
+            <td id="price421">170,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="422"></td>
+            <td id="code422">OXALA</td>
+            <td id="name422">OXALATO URINA 24 HS</td>
+            <td id="price422">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="423"></td>
+            <td id="code423">OXALI</td>
+            <td id="name423">OXALATO AMOSTRA ISOLADA</td>
+            <td id="price423">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="424"></td>
+            <td id="code424">OXIU</td>
+            <td id="name424">PESQUISA DE OXYURUS</td>
+            <td id="price424">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="425"></td>
+            <td id="code425">PACHO</td>
+            <td id="name425">ACIDO HOMOGENTISICO - PESQUISA</td>
+            <td id="price425">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="426"></td>
+            <td id="code426">PAI1</td>
+            <td id="name426">POLIMORFISMO (4G/5G - PAI1)</td>
+            <td id="price426">640,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="427"></td>
+            <td id="code427">PAT</td>
+            <td id="name427">TESTE DE PATERNIDADE TRIO MAE, FILHO E PAI</td>
+            <td id="price427">400,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="428"></td>
+            <td id="code428">PBNP</td>
+            <td id="name428">PRÓ BNP - N - TERMINAL</td>
+            <td id="price428">110,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="429"></td>
+            <td id="code429">PCR</td>
+            <td id="name429">DOSAGEM DE PROTEINA C REATIVA</td>
+            <td id="price429">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="430"></td>
+            <td id="code430">PCRUS</td>
+            <td id="name430">PROTEÍNA C REATIVA ULTRA SENSIVEL</td>
+            <td id="price430">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="431"></td>
+            <td id="code431">PEBAS</td>
+            <td id="name431">TESTE PEZINHO BASICO</td>
+            <td id="price431">50,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="432"></td>
+            <td id="code432">PEPA</td>
+            <td id="name432">TESTE PEZINHO AMPLIADO</td>
+            <td id="price432">120,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="433"></td>
+            <td id="code433">PEPC</td>
+            <td id="name433">PEPTÍDEO C</td>
+            <td id="price433">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="434"></td>
+            <td id="code434">PEPM</td>
+            <td id="name434">TESTE PEZINHO MASTER</td>
+            <td id="price434">260,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="435"></td>
+            <td id="code435">PEPP</td>
+            <td id="name435">TESTE PEZINHO PLUS</td>
+            <td id="price435">160,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="436"></td>
+            <td id="code436">PF</td>
+            <td id="name436">PARASITOLOGICO DE FEZES</td>
+            <td id="price436">10,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="437"></td>
+            <td id="code437">PF340</td>
+            <td id="name437">IGE ESPECIFICO CORANTE - VERMELHO CARMIM</td>
+            <td id="price437">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="438"></td>
+            <td id="code438">PFUN</td>
+            <td id="name438">MICOLOGICO DIRETO</td>
+            <td id="price438">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="439"></td>
+            <td id="code439">PLA</td>
+            <td id="name439">CONTAGEM DE PLAQUETAS</td>
+            <td id="price439">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="440"></td>
+            <td id="code440">PMAMA</td>
+            <td id="name440">PAINEL PARA CÂNCER DE MAMA E OVÁRIO</td>
+            <td id="price440">0,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="441"></td>
+            <td id="code441">POT</td>
+            <td id="name441">DOSAGEM DE POTASSIO</td>
+            <td id="price441">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="442"></td>
+            <td id="code442">PREV</td>
+            <td id="name442">CITOLOGIA ONCOTICA VAGINAL</td>
+            <td id="price442">0,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="443"></td>
+            <td id="code443">PROCT</td>
+            <td id="name443">PROCALCITONINA</td>
+            <td id="price443">310,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="444"></td>
+            <td id="code444">PROG</td>
+            <td id="name444">PROGESTERONA</td>
+            <td id="price444">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="445"></td>
+            <td id="code445">PROG1</td>
+            <td id="name445">PROGESTERONA SEDE</td>
+            <td id="price445">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="446"></td>
+            <td id="code446">PROL</td>
+            <td id="name446">PROLACTINA</td>
+            <td id="price446">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="447"></td>
+            <td id="code447">PROL1</td>
+            <td id="name447">PROLACTINA SEDE</td>
+            <td id="price447">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="448"></td>
+            <td id="code448">PROTI</td>
+            <td id="name448">PROTEINURIA AMOSTRA ISOLADA</td>
+            <td id="price448">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="449"></td>
+            <td id="code449">PROTU</td>
+            <td id="name449">PROTEINURIA DE 24 HORAS</td>
+            <td id="price449">25,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="450"></td>
+            <td id="code450">PRPCR</td>
+            <td id="name450">PROTROMBINA - MUTAÇÃO G20210A</td>
+            <td id="price450">250,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="451"></td>
+            <td id="code451">PSAL</td>
+            <td id="name451">PSA LIVRE</td>
+            <td id="price451">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="452"></td>
+            <td id="code452">PSALT</td>
+            <td id="name452">PSA LIVRE/TOTAL</td>
+            <td id="price452">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="453"></td>
+            <td id="code453">PSAT</td>
+            <td id="name453">PSA TOTAL ULTRA SENSIVEL</td>
+            <td id="price453">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="454"></td>
+            <td id="code454">PSAT1</td>
+            <td id="name454">PSA TOTAL ULTRA SENSIVEL SEDE</td>
+            <td id="price454">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="455"></td>
+            <td id="code455">PTCA</td>
+            <td id="name455">PROTEINA C ANTIGENICA</td>
+            <td id="price455">570,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="456"></td>
+            <td id="code456">PTCF</td>
+            <td id="name456">PROTEINA C FUNCIONAL</td>
+            <td id="price456">75,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="457"></td>
+            <td id="code457">PTF</td>
+            <td id="name457">DOSAGEM DE PROTEINAS TOTAIS E FRACOES</td>
+            <td id="price457">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="458"></td>
+            <td id="code458">PTH</td>
+            <td id="name458">PARATORMONIO - PTH INTACTO</td>
+            <td id="price458">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="459"></td>
+            <td id="code459">PTROM</td>
+            <td id="name459">PAINEL DE TROMBOFILIAS - G1691A, G20210A, C677T, A1298C</td>
+            <td id="price459">410,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="460"></td>
+            <td id="code460">PTSA</td>
+            <td id="name460">PROTEINA S ANTIGENICA</td>
+            <td id="price460">700,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="461"></td>
+            <td id="code461">PTSF</td>
+            <td id="name461">PROTEINA S FUNCIONAL</td>
+            <td id="price461">150,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="462"></td>
+            <td id="code462">PTSL</td>
+            <td id="name462">PROTEINA S LIVRE</td>
+            <td id="price462">290,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="463"></td>
+            <td id="code463">RENAT</td>
+            <td id="name463">RENINA - ATIVIDADE</td>
+            <td id="price463">45,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="464"></td>
+            <td id="code464">RENIN</td>
+            <td id="name464">RENINA</td>
+            <td id="price464">50,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="465"></td>
+            <td id="code465">RET</td>
+            <td id="name465">CONTAGEM DE RETICULOCITOS</td>
+            <td id="price465">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="466"></td>
+            <td id="code466">RETR</td>
+            <td id="name466">PROVA DE RETRAÇÃO DO COÁGULO</td>
+            <td id="price466">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="467"></td>
+            <td id="code467">RH</td>
+            <td id="name467">FATOR RH</td>
+            <td id="price467">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="468"></td>
+            <td id="code468">ROTA</td>
+            <td id="name468">ROTAVIRUS</td>
+            <td id="price468">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="469"></td>
+            <td id="code469">ROTLA</td>
+            <td id="name469">ROTINA LIQUIDO SINOVIAL</td>
+            <td id="price469">45,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="470"></td>
+            <td id="code470">ROTPL</td>
+            <td id="name470">ROTINA LIQUIDO PLEURAL</td>
+            <td id="price470">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="471"></td>
+            <td id="code471">RPCA</td>
+            <td id="name471">RESISTÊNCIA A PROTEÍNA C ATIVADA</td>
+            <td id="price471">200,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="472"></td>
+            <td id="code472">RPTCR</td>
+            <td id="name472">RELACAO PROTEINA/CREATININA</td>
+            <td id="price472">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="473"></td>
+            <td id="code473">RUBAV</td>
+            <td id="name473">AVIDEZ - ANTICORPOS RUBEOLA IGG</td>
+            <td id="price473">120,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="474"></td>
+            <td id="code474">RUBEG</td>
+            <td id="name474">RUBEOLA - ANTICORPOS IGG</td>
+            <td id="price474">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="475"></td>
+            <td id="code475">RUBEM</td>
+            <td id="name475">RUBEOLA - ANTICORPOS IGM</td>
+            <td id="price475">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="476"></td>
+            <td id="code476">SARAG</td>
+            <td id="name476">SARAMPO - ANTICORPOS IGG</td>
+            <td id="price476">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="477"></td>
+            <td id="code477">SARAM</td>
+            <td id="name477">SARAMPO - ANTICORPOS IGM</td>
+            <td id="price477">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="478"></td>
+            <td id="code478">SCHIT</td>
+            <td id="name478">ESQUISTOSSOMOSE ANTICORPOS IGG</td>
+            <td id="price478">70,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="479"></td>
+            <td id="code479">SECV</td>
+            <td id="name479">SECREÇAO VAGINAL - A FRESCO</td>
+            <td id="price479">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="480"></td>
+            <td id="code480">SELEN</td>
+            <td id="name480">SELENIO SERICO</td>
+            <td id="price480">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="481"></td>
+            <td id="code481">SEROT</td>
+            <td id="name481">SEROTONINA</td>
+            <td id="price481">50,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="482"></td>
+            <td id="code482">SEXFE</td>
+            <td id="name482">SEXAGEM FETAL</td>
+            <td id="price482">240,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="483"></td>
+            <td id="code483">SF</td>
+            <td id="name483">SERIADO DE FEZES</td>
+            <td id="price483">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="484"></td>
+            <td id="code484">SHBG</td>
+            <td id="name484">GLOBULINA LIGADORA DE HORMÔNIOS SEX</td>
+            <td id="price484">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="485"></td>
+            <td id="code485">SO</td>
+            <td id="name485">PESQUISA DE SANGUE OCULTO FEZES</td>
+            <td id="price485">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="486"></td>
+            <td id="code486">SOD</td>
+            <td id="name486">DOSAGEM DE SODIO</td>
+            <td id="price486">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="487"></td>
+            <td id="code487">SRP</td>
+            <td id="name487">PESQUISA DE SUBSTANCIAS REDUTORAS NAS FEZES</td>
+            <td id="price487">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="488"></td>
+            <td id="code488">T3</td>
+            <td id="name488">TIROXINA - T3 TOTAL</td>
+            <td id="price488">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="489"></td>
+            <td id="code489">T3L</td>
+            <td id="name489">T3 LIVRE</td>
+            <td id="price489">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="490"></td>
+            <td id="code490">T3L1</td>
+            <td id="name490">T3 LIVRE SEDE</td>
+            <td id="price490">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="491"></td>
+            <td id="code491">T3REV</td>
+            <td id="name491">T3 REVERSO</td>
+            <td id="price491">100,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="492"></td>
+            <td id="code492">T3T1</td>
+            <td id="name492">TIROXINA - T3 TOTAL SEDE</td>
+            <td id="price492">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="493"></td>
+            <td id="code493">T4L</td>
+            <td id="name493">T4 LIVRE</td>
+            <td id="price493">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="494"></td>
+            <td id="code494">T4L1</td>
+            <td id="name494">T4 LIVRE SEDE</td>
+            <td id="price494">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="495"></td>
+            <td id="code495">T4T</td>
+            <td id="name495">TIROXINA - T4 TOTAL</td>
+            <td id="price495">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="496"></td>
+            <td id="code496">T4T1</td>
+            <td id="name496">TIROXINA - T4 TOTAL SEDE</td>
+            <td id="price496">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="497"></td>
+            <td id="code497">TAP</td>
+            <td id="name497">TEMPO DE ATIVIDADE DE PROTROMBINA</td>
+            <td id="price497">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="498"></td>
+            <td id="code498">TESBI</td>
+            <td id="name498">TESTOSTERONA BIODISPONIVEL</td>
+            <td id="price498">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="499"></td>
+            <td id="code499">TESTL</td>
+            <td id="name499">TESTOSTERONA LIVRE</td>
+            <td id="price499">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="500"></td>
+            <td id="code500">TESTT</td>
+            <td id="name500">TESTOSTERONA TOTAL</td>
+            <td id="price500">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="501"></td>
+            <td id="code501">TGO</td>
+            <td id="name501">DOSAGEM DE TRANSAMINASE OXALÁCETICA (TGO/AST)</td>
+            <td id="price501">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="502"></td>
+            <td id="code502">TGP</td>
+            <td id="name502">DOSAGEM DE TRANSAMINASE PIRUVICA (TGP/ALT)</td>
+            <td id="price502">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="503"></td>
+            <td id="code503">TIRO</td>
+            <td id="name503">TIREOGLOBULINA</td>
+            <td id="price503">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="504"></td>
+            <td id="code504">TOPIR</td>
+            <td id="name504">TOPIRAMATO</td>
+            <td id="price504">580,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="505"></td>
+            <td id="code505">TOXA</td>
+            <td id="name505">TOXOPLASMOSE ANTICORPOS IGA</td>
+            <td id="price505">100,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="506"></td>
+            <td id="code506">TOXAV</td>
+            <td id="name506">AVIDEZ - ANTICORPOS TOXOPLASMOSE IGG</td>
+            <td id="price506">70,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="507"></td>
+            <td id="code507">TOXG</td>
+            <td id="name507">TOXOPLASMOSE ANTICORPOS IGG</td>
+            <td id="price507">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="508"></td>
+            <td id="code508">TOXM</td>
+            <td id="name508">TOXOPLASMOSE ANTICORPOS IGM</td>
+            <td id="price508">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="509"></td>
+            <td id="code509">TOXOL</td>
+            <td id="name509">TOXICOLOGICO LARGA JANELA CABELO</td>
+            <td id="price509">210,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="510"></td>
+            <td id="code510">TRAB</td>
+            <td id="name510">TRAB ANTICORPOS ANTI RECEPTOR DE TSH</td>
+            <td id="price510">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="511"></td>
+            <td id="code511">TRANS</td>
+            <td id="name511">TRANSFERRINA</td>
+            <td id="price511">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="512"></td>
+            <td id="code512">TRIAT</td>
+            <td id="name512">TRIAGEM TOXICOLOGICO</td>
+            <td id="price512">250,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="513"></td>
+            <td id="code513">TROP</td>
+            <td id="name513">TROPONINA CARDIACA T</td>
+            <td id="price513">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="514"></td>
+            <td id="code514">TROP1</td>
+            <td id="name514">TROPONINA CARDIACA I</td>
+            <td id="price514">35,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="515"></td>
+            <td id="code515">TSH</td>
+            <td id="name515">TSH ULTRA SENSIVEL</td>
+            <td id="price515">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="516"></td>
+            <td id="code516">TSH1</td>
+            <td id="name516">TSH ULTRA SENSIVEL SEDE</td>
+            <td id="price516">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="517"></td>
+            <td id="code517">TTGO</td>
+            <td id="name517">CURVA DE TOLERÂNCIA A GLICOSE 2HRS</td>
+            <td id="price517">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="518"></td>
+            <td id="code518">TTGO2</td>
+            <td id="name518">CURVA DE TOLERÂNCIA À GLICOSE - 1 E 2HRS</td>
+            <td id="price518">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="519"></td>
+            <td id="code519">TTPA</td>
+            <td id="name519">TEMPO DE TROMBOPLASTINA PARCIAL ATIVADA</td>
+            <td id="price519">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="520"></td>
+            <td id="code520">URE</td>
+            <td id="name520">DOSAGEM DE UREIA</td>
+            <td id="price520">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="521"></td>
+            <td id="code521">UREUT</td>
+            <td id="name521">UREIA URINARIA 24 HORAS</td>
+            <td id="price521">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="522"></td>
+            <td id="code522">URICU</td>
+            <td id="name522">URINOCULTURA</td>
+            <td id="price522">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="523"></td>
+            <td id="code523">V617F</td>
+            <td id="name523">MUTAÇÃO V617F NO GENE JAK-2 DETEC</td>
+            <td id="price523">620,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="524"></td>
+            <td id="code524">VARZG</td>
+            <td id="name524">VARICELA ZOSTER - ANTICORPOS IGG</td>
+            <td id="price524">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="525"></td>
+            <td id="code525">VARZM</td>
+            <td id="name525">VARICELA ZOSTER - ANTICORPOS IGM</td>
+            <td id="price525">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="526"></td>
+            <td id="code526">VASO</td>
+            <td id="name526">VASOPRESSINA (ADH)</td>
+            <td id="price526">165,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="527"></td>
+            <td id="code527">VB12</td>
+            <td id="name527">VITAMINA B12</td>
+            <td id="price527">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="528"></td>
+            <td id="code528">VDRL</td>
+            <td id="name528">VDRL</td>
+            <td id="price528">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="529"></td>
+            <td id="code529">VDRLL</td>
+            <td id="name529">VDRL LIQUOR</td>
+            <td id="price529">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="530"></td>
+            <td id="code530">VHS</td>
+            <td id="name530">VELOCIDADE DE HEMOSSEDIMENTACAO</td>
+            <td id="price530">15,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="531"></td>
+            <td id="code531">VI125</td>
+            <td id="name531">VITAMINA D - 1,25 DIHIDROXI</td>
+            <td id="price531">60,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="532"></td>
+            <td id="code532">VIK</td>
+            <td id="name532">VITAMINA K</td>
+            <td id="price532">260,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="533"></td>
+            <td id="code533">VIT25</td>
+            <td id="name533">VITAMINA D - 25 HIDROXI</td>
+            <td id="price533">40,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="534"></td>
+            <td id="code534">VITA</td>
+            <td id="name534">VITAMINA A</td>
+            <td id="price534">45,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="535"></td>
+            <td id="code535">VITAC</td>
+            <td id="name535">VITAMINA C</td>
+            <td id="price535">85,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="536"></td>
+            <td id="code536">VITB1</td>
+            <td id="name536">VITAMINA B1</td>
+            <td id="price536">165,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="537"></td>
+            <td id="code537">VITB2</td>
+            <td id="name537">VITAMINA B2</td>
+            <td id="price537">290,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="538"></td>
+            <td id="code538">VITB3</td>
+            <td id="name538">VITAMINA B3</td>
+            <td id="price538">460,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="539"></td>
+            <td id="code539">VITB6</td>
+            <td id="name539">VITAMINA B6</td>
+            <td id="price539">210,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="540"></td>
+            <td id="code540">VITE</td>
+            <td id="name540">VITAMINA E</td>
+            <td id="price540">120,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="541"></td>
+            <td id="code541">WIDAL</td>
+            <td id="name541">WIDAL - REACAO</td>
+            <td id="price541">30,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="542"></td>
+            <td id="code542">WROSE</td>
+            <td id="name542">WAALER - ROSE</td>
+            <td id="price542">20,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="543"></td>
+            <td id="code543">XFRAP</td>
+            <td id="name543">X FRAGIL - PESQUISA POR PCR</td>
+            <td id="price543">600,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="544"></td>
+            <td id="code544">ZICAG</td>
+            <td id="name544">ZIKA VÍRUS ANTICORPOS IGG</td>
+            <td id="price544">290,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="545"></td>
+            <td id="code545">ZICAM</td>
+            <td id="name545">ZIKA VIRUS ANTICORPOS IGM</td>
+            <td id="price545">290,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="546"></td>
+            <td id="code546">ZICGM</td>
+            <td id="name546">TESTE RAPIDO ZIKA VIRUS IgG/IgM</td>
+            <td id="price546">120,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="547"></td>
+            <td id="code547">ZIKA</td>
+            <td id="name547">ZIKA VIRUS - DETECÇAO POR PCR</td>
+            <td id="price547">490,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="548"></td>
+            <td id="code548">ZNERI</td>
+            <td id="name548">ZINCO ERITROCITARIO</td>
+            <td id="price548">50,00</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="check" title="check" value="549"></td>
+            <td id="code549">ZNS</td>
+            <td id="name549">ZINCO</td>
+            <td id="price549">30,00</td>
+        </tr>
+
+    </table>
+
+    <div id="final-buttons">
+        <button type="button" id="calc-button">Calcular</button>
+        <button type="button" id="clear-button">Limpar</button>
+    </div>
+
+    <div id="result"></div>
+
+    <script src="scripts.js"></script>
 </body>
+
 </html>
