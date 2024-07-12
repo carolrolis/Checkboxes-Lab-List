@@ -19,14 +19,28 @@ h1 {
   margin:3rem auto 4rem;
   text-align: center;
   font-family: Michroma;
-  font-size:1.5rem;
+  font-size:1.6rem;
   word-spacing: 1rem;
   letter-spacing: 4px;
 }
 
-#searchbar {
-  position: absolute;
-  right:5rem;
+input[type='text'] {
+  height:2rem;
+  width:48%;
+  border-radius: 5px;
+  border-color: white;
+  display: block;
+  margin:0 auto 2rem;
+  text-align: center;
+  font-family: Michroma;
+  font-size:1rem;
+}
+
+#search-bars {
+  width:45%;
+  margin: auto;
+  display:flex;
+  flex-direction: row;
 }
 
 table {
@@ -48,8 +62,8 @@ td {
   vertical-align: middle;
 }
 
-input {
-  cursor: pointer;
+input[type='checkbox'] {
+  cursor:pointer;
 }
 
 #final-buttons {
@@ -61,7 +75,9 @@ input {
 
 button {
   font-family:Michroma;
-  height:1.8rem;
+  font-size:1rem;
+  color:rgb(43, 43, 43);
+  height:2rem;
   margin-top:0.8rem;
   border-radius: 5px;
   border-color: white;
