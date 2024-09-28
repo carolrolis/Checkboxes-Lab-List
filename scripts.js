@@ -142,8 +142,8 @@ function filterExamsName() {
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-  //Se a altura do documento for menor que 400, o botão de descer não aparecerá
-  if (document.documentElement.scrollTop < 200) {
+  //Se a altura do documento for menor que 80, o botão de descer não aparecerá
+  if (document.documentElement.scrollTop < 80) {
     buttonBottom.style.display = "none";
   } 
   //Se a altura não for menor, o botão aparecerá
