@@ -151,10 +151,12 @@ function scrollFunction() {
     buttonBottom.style.display = "block";
   }
 
-  //Se
+  //Se a posição de rolagem for maior ou igual à altura da janela, o botão aparecerá
   if (document.body.scrollTop >= window.innerHeight || document.documentElement.scrollTop >= window.innerHeight) {
     buttonTop.style.display = "block";
-  } else {
+  }
+  //Senão, não aparecerá
+  else {
     buttonTop.style.display = "none";
   }
 }
