@@ -88,6 +88,7 @@ function clear() {
   exams = [];
   searchBarName.value = '';
   searchBarCode.value = '';
+  scrollToTop();
   document.querySelectorAll('tr').forEach(row => row.style.display = '');
   document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => checkbox.checked = false);
 }
