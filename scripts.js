@@ -4,6 +4,8 @@ const clearButton = document.getElementById('clear-button');
 const result = document.getElementById('result');
 const searchBarCode = document.getElementById('search-bar-code');
 const searchBarName = document.getElementById('search-bar-name');
+const buttonBottom = document.getElementById("scroll-down");
+const buttonTop = document.getElementById("scroll-top");
 
 //Variável que seleciona todos os elementos do tipo input - checkbox
 const checkboxes = document.querySelectorAll('input[type="checkbox"]');
@@ -78,15 +80,17 @@ function displayTotal() {
 }
 
 
-//Função que reseta as variáveis 'totalPrice' e 'exams', limpa a visualização do resultado(result) e reestabelece as checkboxes como desmarcadas(false)
+//Função que reseta as variáveis 'totalPrice' e 'exams', limpa a visualização do resultado(result), apaga o que foi escrito nas searchbars, mostra a lista completa e reestabelece as checkboxes como desmarcadas(false)
 function clear() {
   result.innerHTML = ''
   result.style.display = "none";
   totalPrice = 0;
   exams = [];
+  searchBarName.value = '';
+  searchBarCode.value = '';
+  document.querySelectorAll('tr').forEach(row => row.style.display = '');
   document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => checkbox.checked = false);
 }
-
 
 
 //Função que filtra os exames pelo código ao digitar na 'search-bar-code'
@@ -132,6 +136,41 @@ function filterExamsName() {
       }
     }
   });
+}
+
+//A função scrollFunction funciona assim que a tela for scrollada pela primeira vez
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+  //Se a altura do documento for menor que 400, o botão de descer não aparecerá
+  if (document.documentElement.scrollTop < 200) {
+    buttonBottom.style.display = "none";
+  } 
+  //Se a altura não for menor, o botão aparecerá
+  else {
+    buttonBottom.style.display = "block";
+  }
+
+  //Se
+  if (document.body.scrollTop >= window.innerHeight || document.documentElement.scrollTop >= window.innerHeight) {
+    buttonTop.style.display = "block";
+  } else {
+    buttonTop.style.display = "none";
+  }
+}
+
+//A função 'scrollToBottom' fará com que o botão, quando clicado, vá até o fim do documento
+function scrollToBottom() {
+  window.scrollTo({
+    top: document.body.scrollHeight,
+    behavior: 'smooth'
+  });
+}
+
+//A função 'scrollToTop' fará com que o botão, quando clicado, vá até o início(0) do documento
+function scrollToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 
 
